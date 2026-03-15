@@ -28,3 +28,10 @@
 .shadow-red {
     box-shadow: 0 1rem 3rem rgba(217, 4, 41, 0.175);
 }
+
+.card-header img {
+    width: 100%;
+    display: block;
+    border-radius: 15%;
+    margin: 0;
+}
