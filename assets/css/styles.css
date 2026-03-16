@@ -35,3 +35,9 @@
     border-radius: 15%;
     margin: 0;
 }
+
+.mySwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* clave para que la card tome toda la altura */
+}
