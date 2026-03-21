@@ -39,5 +39,12 @@
 .mySwiper .swiper-slide {
     display: flex;
     justify-content: center;
-    align-items: stretch; /* clave para que la card tome toda la altura */
+    align-items: stretch;
+}
+
+.card-cliente {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
 }

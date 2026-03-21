@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         loop: true,
         spaceBetween: 10,
         autoplay: {
-            delay: 2500,
+            delay: 10000,
             disableOnInteraction: false,
         },
         breakpoints: {
