@@ -34,6 +34,13 @@
     border-radius: 15%;
     margin: 0;
 }
+.mySwiper {
+    min-height: 320px; /* ajusta a tu card */
+}
+
+.card-header {
+    min-height: 225px;
+}
 
 .mySwiper .swiper-slide {
     display: flex;
