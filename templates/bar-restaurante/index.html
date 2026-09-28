@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Terraza | Restaurante y Bar en Salamanca</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="La Terraza es un restaurante y bar en Salamanca con cocina mediterránea creativa, cócteles artesanales y un ambiente único. Reserva tu mesa.">
+    <meta name="keywords"
+        content="restaurante Salamanca, bar Salamanca, cocina mediterránea, cócteles, reservas restaurante, tapeo Salamanca">
+    <link rel="canonical" href="https://www.laterraza-salamanca.es/">
+    <meta name="author" content="La Terraza">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="La Terraza | Restaurante y Bar en Salamanca">
+    <meta property="og:description"
+        content="Cocina mediterránea creativa y cócteles artesanales en el corazón de Salamanca. Reserva tu mesa.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://www.laterraza-salamanca.es/">
+    <meta property="og:image" content="https://www.laterraza-salamanca.es/img/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Schema.org: Restaurant -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "La Terraza",
+        "image": "https://www.laterraza-salamanca.es/img/og-image.jpg",
+        "servesCuisine": ["Mediterránea", "Española", "Creativa"],
+        "priceRange": "€€",
+        "telephone": "+34 923 000 000",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle Mayor 15",
+            "addressLocality": "Salamanca",
+            "postalCode": "37001",
+            "addressCountry": "ES"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Sunday"],
+                "opens": "13:00",
+                "closes": "23:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Friday", "Saturday"],
+                "opens": "13:00",
+                "closes": "01:00"
+            }
+        ],
+        "acceptsReservations": "True"
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">La Terraza</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#carta">Carta</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="#reserva" class="btn btn-primary nav-cta">Reservar</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>La Terraza</h1>
+            <p class="hero-tagline">Cocina mediterránea con alma charra</p>
+            <a href="#carta" class="btn btn-primary btn-lg">Ver carta</a>
+        </div>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section id="historia" class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestra historia</h2>
+            <div class="historia-grid">
+                <div class="historia-texto">
+                    <p>
+                        Nacimos en 2018 en el corazón de Salamanca con una idea clara: crear un espacio donde
+                        la tradición culinaria se encontrara con la creatividad más atrevida.
+                    </p>
+                    <p>
+                        Nuestro equipo de cocina trabaja con productos de proximidad, recuperando recetas
+                        de siempre y dándoles un toque contemporáneo. Cada plato cuenta una historia.
+                    </p>
+                    <p>
+                        Por las noches, La Terraza se transforma: luces tenues, música en vivo y una carta
+                        de cócteles artesanales que te sorprenderá.
+                    </p>
+                </div>
+                <div class="historia-imagen">
+                    <div class="placeholder-img placeholder-grande">
+                        <span>Imagen del interior del restaurante</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carta / Menú -->
+    <section id="carta" class="section section-oscura">
+        <div class="container">
+            <h2 class="section-title">Nuestra carta</h2>
+            <p class="section-subtitle">Platos destacados de la casa</p>
+
+            <div class="carta-grid">
+                <!-- Plato 1 -->
+                <div class="plato-card">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Carpaccio de ternera</h3>
+                        <p>Láminas finas de ternera con parmesano, rúcula y reducción de balsámico.</p>
+                        <span class="plato-precio">14,50 €</span>
+                    </div>
+                </div>
+
+                <!-- Plato 2 -->
+                <div class="plato-card">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Arroz meloso de setas</h3>
+                        <p>Arroz cremoso con variedades de setas de la Sierra y trufa negra.</p>
+                        <span class="plato-precio">16,00 €</span>
+                    </div>
+                </div>
+
+                <!-- Plato 3 -->
+                <div class="plato-card">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Salmón a la parrilla</h3>
+                        <p>Salmón noruego con verduras de temporada y salsa de eneldo.</p>
+                        <span class="plato-precio">18,50 €</span>
+                    </div>
+                </div>
+
+                <!-- Plato 4 -->
+                <div class="plato-card">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Tarta de queso al horno</h3>
+                        <p>Nuestra versión de la tarta clásica, con corazón cremoso y frutos rojos.</p>
+                        <span class="plato-precio">7,50 €</span>
+                    </div>
+                </div>
+
+                <!-- Plato 5 -->
+                <div class="plato-card">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Cóctel La Terraza</h3>
+                        <p>Nuestro cóctel signature: ginebra, licor de flor de saúco, tónica y romero.</p>
+                        <span class="plato-precio">9,00 €</span>
+                    </div>
+                </div>
+
+                <!-- Plato 6 -->
+                <div class="plato-card">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Tabla de ibéricos</h3>
+                        <p>Selección de embutidos ibéricos de bellota con pan de cristal y tomate.</p>
+                        <span class="plato-precio">19,00 €</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="section">
+        <div class="container">
+            <h2 class="section-title">Galería</h2>
+            <p class="section-subtitle">Momentos en La Terraza</p>
+
+            <div class="galeria-grid">
+                <div class="placeholder-img placeholder-media">
+                    <span>Foto del ambiente</span>
+                </div>
+                <div class="placeholder-img placeholder-media">
+                    <span>Foto de platos</span>
+                </div>
+                <div class="placeholder-img placeholder-media">
+                    <span>Foto de la barra</span>
+                </div>
+                <div class="placeholder-img placeholder-media">
+                    <span>Foto del equipo</span>
+                </div>
+                <div class="placeholder-img placeholder-media">
+                    <span>Foto de la terraza</span>
+                </div>
+                <div class="placeholder-img placeholder-media">
+                    <span>Foto de postres</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación y horarios -->
+    <section id="contacto" class="section section-oscura">
+        <div class="container">
+            <h2 class="section-title">Ubicación y horarios</h2>
+
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <h3>Dónde estamos</h3>
+                    <p>Calle Mayor 15<br>37001 Salamanca</p>
+
+                    <h3>Horarios</h3>
+                    <ul class="horarios-list">
+                        <li><span>Martes a Jueves:</span> 13:00 - 23:00</li>
+                        <li><span>Viernes y Sábado:</span> 13:00 - 01:00</li>
+                        <li><span>Domingo:</span> 13:00 - 23:00</li>
+                        <li><span>Lunes:</span> Cerrado</li>
+                    </ul>
+
+                    <h3>Contacto</h3>
+                    <p>
+                        Tel: <a href="tel:+34923000000">923 000 000</a><br>
+                        Email: <a href="mailto:info@laterraza-salamanca.es">info@laterraza-salamanca.es</a>
+                    </p>
+                </div>
+
+                <div class="contacto-mapa">
+                    <div class="placeholder-img placeholder-grande">
+                        <span>Mapa de ubicación</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de reserva -->
+    <section id="reserva" class="section">
+        <div class="container">
+            <h2 class="section-title">Reserva tu mesa</h2>
+            <p class="section-subtitle">Completa el formulario y te confirmaremos la reserva por email.</p>
+
+            <form class="reserva-form" action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="personas">Nº de personas</label>
+                        <select id="personas" name="personas" required>
+                            <option value="">Selecciona</option>
+                            <option value="1">1 persona</option>
+                            <option value="2">2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                            <option value="5">5 personas</option>
+                            <option value="6">6 personas</option>
+                            <option value="7+">7 o más</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Hora</label>
+                        <select id="hora" name="hora" required>
+                            <option value="">Selecciona</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" rows="3"
+                        placeholder="Alergias, peticiones especiales, ocasión..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Confirmar reserva</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 La Terraza. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

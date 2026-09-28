@@ -54,6 +54,10 @@
     object-position: top;
 }
 
+.card-cliente-texto {
+    height: 200px;
+}
+
 @media (min-width: 768px) {
     .mySwiper {
         min-height: 320px;
