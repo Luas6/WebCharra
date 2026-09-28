@@ -35,44 +35,16 @@
     margin: 0;
 }
 .mySwiper {
-    min-height: 280px;
+    min-height: 210px;
 }
 
+.mySwiper .card-header {
+    min-height: 190px;
+}
 .mySwiper .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: stretch;
-}
-
-.mySwiper .card {
-    width: 100%;
-    max-width: 320px;
-    min-height: 260px;
-}
-
-.mySwiper .card-header {
-    min-height: 120px;
-    padding: 1rem;
-}
-
-.mySwiper .card-header img {
-    max-height: 100px;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-}
-
-.mySwiper .card-body {
-    padding: 1rem;
-}
-
-.mySwiper .card-title {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.mySwiper .card-text {
-    font-size: 0.85rem;
 }
 
 .card-cliente {
