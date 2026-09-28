@@ -48,14 +48,15 @@
 }
 
 .card-cliente {
-    height: 200px;
+    height: 150px;
     width: 100%;
     object-fit: contain;
-    object-position: top;
+    object-position: center;
+    padding-top: 15px;
 }
 
 .card-cliente-texto {
-    height: 200px;
+    height: 150px;
 }
 
 @media (min-width: 768px) {
