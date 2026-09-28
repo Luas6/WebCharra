@@ -70,7 +70,10 @@
     <!-- Navegación -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">Clínica Vitalis</a>
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">+</span>
+                Clínica Vitalis
+            </a>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Especialidades</a></li>
@@ -318,6 +321,14 @@
             <p>&copy; 2026 Clínica Vitalis. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Script para formulario dummy -->
+    <script>
+        document.querySelector('.cita-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('¡Gracias por tu interés! Este es un formulario de prueba. Contacta con nosotros en info@clinicavitalis.es');
+        });
+    </script>
 
 </body>
 

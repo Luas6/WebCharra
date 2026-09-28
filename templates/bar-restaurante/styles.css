@@ -376,6 +376,36 @@ body {
     height: 180px;
 }
 
+/* --- Chips de categorías --- */
+.carta-chips {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.chip {
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    border: 2px solid #FF233C;
+    background-color: transparent;
+    color: #F4F4F4;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.chip:hover {
+    background-color: rgba(255, 35, 60, 0.15);
+}
+
+.chip.active {
+    background-color: #FF233C;
+    color: #fff;
+}
+
 /* --- Footer --- */
 .footer {
     background-color: #111;

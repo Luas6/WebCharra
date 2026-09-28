@@ -122,9 +122,17 @@
             <h2 class="section-title">Nuestra carta</h2>
             <p class="section-subtitle">Platos destacados de la casa</p>
 
+            <!-- Chips de categorías -->
+            <div class="carta-chips">
+                <button class="chip active" data-filter="todos">Todos</button>
+                <button class="chip" data-filter="entrantes">Entrantes</button>
+                <button class="chip" data-filter="principales">Principales</button>
+                <button class="chip" data-filter="postres">Postres</button>
+            </div>
+
             <div class="carta-grid">
-                <!-- Plato 1 -->
-                <div class="plato-card">
+                <!-- Entrantes -->
+                <div class="plato-card" data-categoria="entrantes">
                     <div class="placeholder-img placeholder-pequena">
                         <span>Foto del plato</span>
                     </div>
@@ -135,8 +143,52 @@
                     </div>
                 </div>
 
-                <!-- Plato 2 -->
-                <div class="plato-card">
+                <div class="plato-card" data-categoria="entrantes">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Tabla de ibéricos</h3>
+                        <p>Selección de embutidos ibéricos de bellota con pan de cristal y tomate.</p>
+                        <span class="plato-precio">19,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato-card" data-categoria="entrantes">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Ensalada de queso de cabra</h3>
+                        <p>Queso de cabra caramelizado, nueces, miel y vinagreta de frambuesa.</p>
+                        <span class="plato-precio">12,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato-card" data-categoria="entrantes">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Croquetas de jamón</h3>
+                        <p>Croquetas caseras de jamón ibérico con bechamel cremosa.</p>
+                        <span class="plato-precio">10,50 €</span>
+                    </div>
+                </div>
+
+                <div class="plato-card" data-categoria="entrantes">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Bruschetta de tomate y burrata</h3>
+                        <p>Pan tostado con tomate fresco, burrata cremosa y albahaca.</p>
+                        <span class="plato-precio">11,00 €</span>
+                    </div>
+                </div>
+
+                <!-- Principales -->
+                <div class="plato-card" data-categoria="principales">
                     <div class="placeholder-img placeholder-pequena">
                         <span>Foto del plato</span>
                     </div>
@@ -147,8 +199,7 @@
                     </div>
                 </div>
 
-                <!-- Plato 3 -->
-                <div class="plato-card">
+                <div class="plato-card" data-categoria="principales">
                     <div class="placeholder-img placeholder-pequena">
                         <span>Foto del plato</span>
                     </div>
@@ -159,8 +210,74 @@
                     </div>
                 </div>
 
-                <!-- Plato 4 -->
-                <div class="plato-card">
+                <div class="plato-card" data-categoria="principales">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Secreto ibérico</h3>
+                        <p>Secreto ibérico a la brasa con patatas pimienta y salsa de pimentón.</p>
+                        <span class="plato-precio">21,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato-card" data-categoria="principales">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Dorada al horno</h3>
+                        <p>Dorada salvaje con almejas, patatas panaderas y refrito de ajo.</p>
+                        <span class="plato-precio">19,50 €</span>
+                    </div>
+                </div>
+
+                <div class="plato-card" data-categoria="principales">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Risotto de trufa</h3>
+                        <p>Risotto cremoso de trufa negra con parmesano curado.</p>
+                        <span class="plato-precio">17,50 €</span>
+                    </div>
+                </div>
+
+                <div class="plato-card" data-categoria="principales">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Entraña a la parrilla</h3>
+                        <p>Entraña de ternera madurada con chimurri y patatas fritas.</p>
+                        <span class="plato-precio">22,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato-card" data-categoria="principales">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Cordero asado</h3>
+                        <p>Paletilla de cordero asada lentamente con puré de patata trufado.</p>
+                        <span class="plato-precio">20,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato-card" data-categoria="principales">
+                    <div class="placeholder-img placeholder-pequena">
+                        <span>Foto del plato</span>
+                    </div>
+                    <div class="plato-info">
+                        <h3>Pasta fresca con gambas</h3>
+                        <p>Tallarines frescos con gambas, ajo, guindilla y limón.</p>
+                        <span class="plato-precio">18,00 €</span>
+                    </div>
+                </div>
+
+                <!-- Postres -->
+                <div class="plato-card" data-categoria="postres">
                     <div class="placeholder-img placeholder-pequena">
                         <span>Foto del plato</span>
                     </div>
@@ -171,27 +288,25 @@
                     </div>
                 </div>
 
-                <!-- Plato 5 -->
-                <div class="plato-card">
+                <div class="plato-card" data-categoria="postres">
                     <div class="placeholder-img placeholder-pequena">
                         <span>Foto del plato</span>
                     </div>
                     <div class="plato-info">
-                        <h3>Cóctel La Terraza</h3>
-                        <p>Nuestro cóctel signature: ginebra, licor de flor de saúco, tónica y romero.</p>
-                        <span class="plato-precio">9,00 €</span>
+                        <h3>Coulant de chocolate</h3>
+                        <p>Coulant de chocolate negro con corazón fundente y helado de vainilla.</p>
+                        <span class="plato-precio">8,00 €</span>
                     </div>
                 </div>
 
-                <!-- Plato 6 -->
-                <div class="plato-card">
+                <div class="plato-card" data-categoria="postres">
                     <div class="placeholder-img placeholder-pequena">
                         <span>Foto del plato</span>
                     </div>
                     <div class="plato-info">
-                        <h3>Tabla de ibéricos</h3>
-                        <p>Selección de embutidos ibéricos de bellota con pan de cristal y tomate.</p>
-                        <span class="plato-precio">19,00 €</span>
+                        <h3>Crema catalana</h3>
+                        <p>Crema casera con azúcar caramelizado y crujiente de almendra.</p>
+                        <span class="plato-precio">6,50 €</span>
                     </div>
                 </div>
             </div>
@@ -335,6 +450,31 @@
             <p>&copy; 2026 La Terraza. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Script para filtrar carta -->
+    <script>
+        document.querySelectorAll('.chip').forEach(chip => {
+            chip.addEventListener('click', () => {
+                document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+
+                const filtro = chip.dataset.filter;
+                document.querySelectorAll('.plato-card').forEach(plato => {
+                    if (filtro === 'todos' || plato.dataset.categoria === filtro) {
+                        plato.style.display = '';
+                    } else {
+                        plato.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Formulario dummy - no envía datos reales
+        document.querySelector('.reserva-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('¡Gracias por tu interés! Este es un formulario de prueba. Contacta con nosotros en info@laterraza-salamanca.es');
+        });
+    </script>
 
 </body>
 
