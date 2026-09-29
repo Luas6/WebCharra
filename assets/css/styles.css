@@ -74,3 +74,9 @@
         min-height: 205px;
     }
 }
+
+/* Footer */
+.hover-white:hover {
+    color: #fff !important;
+    transition: color 0.2s ease;
+}
