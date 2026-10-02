@@ -1,0 +1,40 @@
+# WebCharra
+
+> WebCharra es una empresa de desarrollo web y SEO con sede en Salamanca, España. Creamos sitios web modernos, rápidos y optimizados para negocios locales.
+
+## Sobre nosotros
+
+- **Nombre:** WebCharra
+- **Ubicación:** Salamanca, España
+- **Especialidad:** Desarrollo web, SEO, diseño de plantillas web
+- **Web:** https://webcharra.es
+
+## Servicios
+
+- Diseño y desarrollo de páginas web
+- Optimización SEO
+- Plantillas web personalizadas para diferentes sectores
+- Consultoría digital
+
+## Plantillas disponibles
+
+- **Bar / Restaurante:** Plantilla con estilo creativo y moderno. Incluye carta de platos, galería de fotos, ubicación y formulario de reserva.
+  - URL: https://webcharra.es/templates/bar-restaurante/
+
+- **Clínica:** Plantilla con estilo glassmorphism, elegante y profesional. Incluye servicios, equipo médico, instalaciones y cita previa.
+  - URL: https://webcharra.es/templates/clinica/
+
+- **Entrenador Personal:** Plantilla con estilo moderno y oscuro. Incluye servicios, guías descargables, asesorías y formulario de contacto.
+  - URL: https://webcharra.es/templates/entrenador-personal/
+
+## Contacto
+
+- **Email:** info@webcharra.es
+- **Teléfono:** +34 634 948 589
+- **WhatsApp:** https://wa.me/34634948589
+
+## Notas
+
+- Todas las plantillas incluyen SEO optimizado y son responsive.
+- Los formularios de las plantillas son de prueba (dummies) y no envían datos reales.
+- Las plantillas se pueden personalizar según las necesidades del cliente.
