@@ -1,769 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>WebCharra | Desarrollo Web y SEO en Salamanca para Pequeñas Empresas</title>
-
-    <!-- Meta descripción para SEO -->
-    <meta name="description"
-        content="WebCharra: desarrollo web en Salamanca para pequeñas empresas. Creamos páginas web, SEO local, Google Maps y soporte técnico. Presupuesto sin compromiso.">
-
-    <!-- Palabras clave -->
-    <meta name="keywords"
-        content="desarrollo web Salamanca, diseño web Salamanca, SEO Salamanca, páginas web Salamanca, Google Maps negocio, mantenimiento web, pequeñas empresas, tiendas online Salamanca">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.webcharra.es/">
-
-    <!-- Autor -->
-    <meta name="author" content="WebCharra">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/webp" href="assets/img/icons/icon-red.ico">
-
-    <!-- Geo tags para SEO local -->
-    <meta name="geo.region" content="ES-SAL">
-    <meta name="geo.placename" content="Salamanca">
-    <meta name="geo.position" content="40.964993;-5.663047">
-    <meta name="ICBM" content="40.964993, -5.663047">
-
-    <!-- Open Graph / Redes sociales -->
-    <meta property="og:title" content="WebCharra | Desarrollo Web y SEO en Salamanca">
-    <meta property="og:description"
-        content="Desarrollo web en Salamanca para pequeñas empresas. Páginas web, SEO local, Google Maps y soporte técnico.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.webcharra.es/">
-    <meta property="og:image" content="https://www.webcharra.es/assets/img/og-image.webp">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:site_name" content="WebCharra">
-
-    <!-- Schema.org: ProfessionalService (negocio local) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "WebCharra",
-        "description": "Desarrollo web y SEO en Salamanca para pequeñas empresas. Creación de páginas web, optimización SEO local, integración en Google Maps y soporte técnico.",
-        "url": "https://www.webcharra.es/",
-        "telephone": "+34 634 948 589",
-        "email": "saulmaji@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "",
-            "addressLocality": "Salamanca",
-            "postalCode": "37000",
-            "addressRegion": "Castilla y León",
-            "addressCountry": "ES"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 40.964993,
-            "longitude": -5.663047
-        },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "09:00",
-            "closes": "18:00"
-        },
-        "priceRange": "€€",
-        "areaServed": {
-            "@type": "City",
-            "name": "Salamanca"
-        },
-        "sameAs": []
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desarrollo web en Salamanca | Páginas web · WebCharra</title>
+  <meta name="description" content="Diseño y desarrollo de páginas web en Salamanca para negocios locales. Webs rápidas, a medida y preparadas para SEO local. Pide presupuesto a WebCharra.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://webcharra.es/">
+  <meta name="theme-color" content="#2B2B2B">
+  <meta name="geo.region" content="ES-SAL">
+  <meta name="geo.placename" content="Salamanca">
+  <link rel="icon" href="assets/img/icons/icon-red.ico" type="image/x-icon">
+  <meta property="og:title" content="Desarrollo web y páginas web en Salamanca | WebCharra">
+  <meta property="og:description" content="Páginas web a medida para negocios de Salamanca. Diseño, desarrollo y SEO local en un mismo equipo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webcharra.es/">
+  <meta property="og:image" content="https://webcharra.es/assets/img/salamanca.webp">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="WebCharra">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://webcharra.es/#negocio",
+    "name": "WebCharra",
+    "url": "https://webcharra.es/",
+    "description": "Diseño y desarrollo de páginas web y SEO local para pequeños negocios de Salamanca y su provincia.",
+    "telephone": "+34634948589",
+    "email": "saulmaji@gmail.com",
+    "image": "https://webcharra.es/assets/img/salamanca.webp",
+    "address": {"@type": "PostalAddress", "addressLocality": "Salamanca", "addressRegion": "Castilla y León", "addressCountry": "ES"},
+    "areaServed": {"@type": "AdministrativeArea", "name": "Provincia de Salamanca"},
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog", "name": "Servicios web",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Diseño y desarrollo de páginas web en Salamanca"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO local y optimización web"}}
+      ]
     }
-    </script>
-
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"
-        media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" media="print"
-        onload="this.media='all'">
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
-        defer></script>
-    <script src="assets/js/main.js" defer></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>-->
+  }
+  </script>
 </head>
-
-
 <body>
-
-    <header>
-        <nav class="navbar navbar-expand-md navbar-charra">
-            <div class="container">
-
-                <a class="navbar-brand" href="/">
-                    <img src="assets/img/icons/icon-black.ico" alt="Logo Web Charra" width="50" height="50">
-                </a>
-
-                <div class="ms-auto">
-                    <a href="#contacto" class="btn btn-dark">
-                        Contacto
-                    </a>
-                </div>
-
-            </div>
-        </nav>
-    </header>
-
-
-    <main>
-
-        <section id="webcharra" class="py-5">
-            <div class="container">
-                <div class="row align-items-center justify-content-evenly">
-
-                    <div class="col-md-6 col-xl-4 text-center">
-                        <img src="assets/img/salamanca-dibujo.webp" alt="Dibujo esquemático de Salamanca"
-                            class="img-fluid rounded" fetchpriority="high" width="400" height="300">
-                    </div>
-
-                    <div class="col-md-6 col-xl-4 text-container my-3">
-                        <h1>WebCharra</h1>
-
-                        <p>
-                            WebCharra ofrece servicios y soluciones web personalizadas para pequeñas empresas de
-                            Salamanca.
-                            Desde la creación de páginas web desde cero hasta soporte y optimización de proyectos
-                            existentes.
-                        </p>
-
-                        <p>
-                            Nuestro objetivo es ayudar a negocios locales a tener presencia online efectiva,
-                            con un enfoque práctico y profesional. Creamos soluciones a medida que destacan tu marca y
-                            mejoran la visibilidad en la web.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="servicios-web" class="py-5 section-dark">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2>Nuestros Servicios Web</h2>
-                    <p>Soluciones para que tu negocio tenga presencia online efectiva y profesional.</p>
-                </div>
-
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-
-                        <!-- Card 1 -->
-                        <div class="swiper-slide d-flex justify-content-center">
-                            <div
-                                class="card h-100 border-0 d-flex flex-row flex-md-column text-center text-md-center">
-                                <div class="card-header p-0 border-0 d-flex align-items-center justify-content-center">
-                                    <img src="assets/img/brand-dibujo.webp" alt="Diseño de marca online"
-                                        class="img-fluid my-2 px-2" loading="lazy" width="250" height="225">
-                                </div>
-                                <div class="card-body d-flex flex-column justify-content-center flex-grow-1">
-                                    <h3 class="card-title">Diseño de Marca Online</h3>
-                                    <p class="card-text">Creamos una identidad digital coherente que destaque tu marca y
-                                        conecte con tus clientes.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 2 -->
-                        <div class="swiper-slide d-flex justify-content-center">
-                            <div
-                                class="card h-100 border-0 d-flex flex-row flex-md-column text-center text-md-center">
-                                <div class="card-header p-0 border-0 d-flex align-items-center justify-content-center">
-                                    <img src="assets/img/web-dibujo.webp" alt="Creación de web desde cero"
-                                        class="img-fluid my-2 px-2" loading="lazy" width="250" height="225">
-                                </div>
-                                <div class="card-body d-flex flex-column justify-content-center flex-grow-1">
-                                    <h3 class="card-title">Web desde cero</h3>
-                                    <p class="card-text">Diseñamos tu página web a medida y a tu gusto, con
-                                        funcionalidades adaptadas a tu negocio.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="swiper-slide d-flex justify-content-center">
-                            <div
-                                class="card h-100 border-0 d-flex flex-row flex-md-column text-center text-md-center">
-                                <div class="card-header p-0 border-0 d-flex align-items-center justify-content-center">
-                                    <img src="assets/img/google-dibujo.webp"
-                                        alt="Integración en Google Maps y publicidad" class="img-fluid my-2 px-2"
-                                        loading="lazy" width="250" height="225">
-                                </div>
-                                <div class="card-body d-flex flex-column justify-content-center flex-grow-1">
-                                    <h3 class="card-title">Google Maps y Publicidad</h3>
-                                    <p class="card-text">Ayudamos a integrar tu negocio en Google Maps y gestionar
-                                        campañas online efectivas.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 4: Consultoría -->
-                        <div class="swiper-slide d-flex justify-content-center">
-                            <div
-                                class="card h-100 border-0 d-flex flex-row flex-md-column text-center text-md-center">
-                                <div class="card-header p-0 border-0 d-flex align-items-center justify-content-center">
-                                    <img src="assets/img/consultoria-dibujo.webp" alt="Consultoría profesional"
-                                        class="img-fluid my-2 px-2" loading="lazy" width="250" height="225">
-                                </div>
-                                <div class="card-body d-flex flex-column justify-content-center flex-grow-1">
-                                    <h3 class="card-title">Consultoría Profesional</h3>
-                                    <p class="card-text">Ofrecemos asesoría especializada para optimizar tu estrategia
-                                        digital y potenciar tu negocio online.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="rendimiento" class="py-5">
-            <div class="container">
-                <div class="row align-items-center justify-content-center text-center mb-4">
-                    <div class="col-lg-8">
-                        <h3>Optimización web y accesibilidad para empresas de Salamanca</h3>
-                        <p class="lead mb-2">En WebCharra trabajamos en el rendimiento y accesibilidad de tu web.</p>
-                        <p class="lead">
-                            Tratamos de que los buscadores como Google te muestren a tus clientes objetivos por
-                            encima de tu competencia.
-                            Optimización, buenas prácticas y SEO efectivo son nuestra prioridad.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center text-center">
-                    <!-- Círculo 1 -->
-                    <div class="col-6 col-sm-3 mb-3">
-                        <div class="circle-score mx-auto mb-2">100</div>
-                        <p>Rendimiento</p>
-                    </div>
-                    <!-- Círculo 2 -->
-                    <div class="col-6 col-sm-3 mb-3">
-                        <div class="circle-score mx-auto mb-2">100</div>
-                        <p>Accesibilidad</p>
-                    </div>
-                    <!-- Círculo 3 -->
-                    <div class="col-6 col-sm-3 mb-3">
-                        <div class="circle-score mx-auto mb-2">100</div>
-                        <p>Prácticas recomendadas</p>
-                    </div>
-                    <!-- Círculo 4 -->
-                    <div class="col-6 col-sm-3 mb-3">
-                        <div class="circle-score mx-auto mb-2">100</div>
-                        <p>SEO</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="planes-web" class="py-5 section-dark">
-            <div class="container">
-
-                <div class="text-center mb-5">
-                    <h2>Planes Web</h2>
-                    <p>Elige la solución que mejor se adapte a tu negocio.</p>
-                </div>
-
-                <div class="row justify-content-center g-4">
-
-                    <!-- PLAN INICIAL -->
-                    <div class="col-md-6 col-lg-5">
-                        <div class="card h-100 border-0 shadow-red text-center">
-
-                            <div class="card-header py-4">
-                                <h3 class="mb-0">Plan Inicial</h3>
-                            </div>
-
-                            <div class="card-body d-flex flex-column justify-content-between">
-
-                                <ul class="list-unstyled text-start mb-4">
-                                    <li>✔ Creación completa de tu página web</li>
-                                    <li>✔ Trabajamos con tus imágenes y textos</li>
-                                    <li>✔ Formulario de contacto</li>
-                                    <li>✔ Configuración y puesta en marcha</li>
-                                    <li>✔ Mantenimiento básico de la web por 3 años</li>
-                                </ul>
-
-                                <div class="mb-4">
-                                    <span class="fs-3 fw-bold">250 €</span>
-                                </div>
-
-                                <a href="#contacto" class="btn btn-danger px-2 mx-sm-5">
-                                    Solicitar información
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PLAN PREMIUM -->
-                    <div class="col-md-6 col-lg-5">
-                        <div class="card h-100 border-0 shadow-red text-center">
-
-                            <div class="card-header py-4">
-                                <h3 class="mb-0">Plan Premium</h3>
-                            </div>
-
-                            <div class="card-body d-flex flex-column justify-content-between">
-
-                                <p class="mb-3"><strong>Todo lo incluido en el Plan Inicial +</strong></p>
-
-                                <ul class="list-unstyled text-start mb-4">
-                                    <li>✔ Creación de marca e identidad visual</li>
-                                    <li>✔ Campaña de Google Ads</li>
-                                    <li>✔ Integración de tu negocio en Google y otros buscadores</li>
-                                    <li>✔ Sesión de fotografía</li>
-                                </ul>
-
-                                <div class="mb-4">
-                                    <span class="fs-3 fw-bold">Pide presupuesto</span>
-                                </div>
-
-                                <a href="#contacto" class="btn btn-danger px-2 mx-sm-5">
-                                    Solicitar información
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- PLAN SALAMANCA -->
-                <div class="row justify-content-center mt-4">
-                    <div class="col-md-6 col-lg-5">
-                        <div class="card h-100 border-0 shadow-red text-center position-relative">
-
-                            <!-- Lazo / Distintivo -->
-                            <div class="position-absolute top-0 end-0 m-2">
-                                <span class="badge bg-danger text-white px-3 py-2">
-                                    🏷️ Oferta
-                                </span>
-                            </div>
-
-                            <div class="card-header pb-4 pt-5">
-                                <h3 class="mb-0">Plan Inicial <span class="text-danger">Salamanca</span></h3>
-                            </div>
-
-                            <div class="card-body d-flex flex-column justify-content-between">
-
-                                <p class="mb-3">
-                                    <strong>¿Tienes un negocio en Salamanca?</strong><br>
-                                    Disfruta del Plan Inicial con un <strong>descuento especial</strong> para negocios
-                                    locales.
-                                </p>
-
-                                <div class="mb-4">
-                                    <span class="fs-3 fw-bold text-danger">175 €</span>
-                                    <br>
-                                    <span class="text-muted text-decoration-line-through">250 €</span>
-                                </div>
-
-                                <a href="#contacto" class="btn btn-danger px-2 mx-sm-5">
-                                    Solicitar información
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="contacto" class="contacto py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="p-4 bg-white rounded shadow-red">
-
-                            <h2 class="mb-2 text-center">Hablemos de tu proyecto</h2>
-                            <p class="mb-3 text-center">
-                                Cuéntanos qué necesitas y nos pondremos en contacto contigo para entender tu proyecto,
-                                asesorarte y valorar la mejor solución para tu web.
-                            </p>
-
-                            <div class="text-center mb-4">
-                                <a href="tel:+34634948589" class="btn btn-outline-danger me-2 mb-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone me-2" viewBox="0 0 16 16">
-                                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                                    </svg>
-                                    634 948 589
-                                </a>
-                                <a href="https://wa.me/34634948589?text=Buenas%2C%20me%20gustar%C3%ADa%20consultarte%20sobre%20un%20proyecto%20web" target="_blank" rel="noopener" class="btn btn-success mb-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp me-2" viewBox="0 0 16 16">
-                                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                                    </svg>
-                                    WhatsApp
-                                </a>
-                            </div>
-
-                            <form id="budgetForm" action="https://formsubmit.co/saulmaji@gmail.com" method="POST">
-
-                                <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto - WebCharra">
-                                <input type="hidden" name="_template" value="table">
-                                <input type="hidden" name="_captcha" value="false">
-                                <input type="text" name="_honey" style="display:none">
-
-                                <!-- Nombre -->
-                                <div class="mb-3">
-                                    <label for="Nombre" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="Nombre" name="Nombre"
-                                        placeholder="Tu nombre" required>
-                                </div>
-
-                                <!-- Empresa -->
-                                <div class="mb-3">
-                                    <label for="Empresa" class="form-label">Empresa / Proyecto</label>
-                                    <input type="text" class="form-control" id="Empresa" name="Empresa"
-                                        placeholder="Nombre de tu empresa o proyecto">
-                                </div>
-
-                                <!-- Email -->
-                                <div class="mb-3">
-                                    <label for="Email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="Email" name="Email"
-                                        placeholder="Tu email de contacto" required>
-                                </div>
-
-                                <!-- Teléfono -->
-                                <div class="mb-3">
-                                    <label for="Telefono" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="Telefono" name="Telefono"
-                                        placeholder="Tu teléfono" required>
-                                </div>
-
-                                <!-- Mensaje -->
-                                <div class="mb-3">
-                                    <label for="Mensaje" class="form-label">Describe tu proyecto</label>
-                                    <textarea class="form-control" id="Mensaje" name="Mensaje" rows="4"
-                                        placeholder="Cuéntame qué necesitas: tipo de web, funcionalidades, plazos, presupuesto etc."
-                                        required></textarea>
-                                </div>
-
-                                <!-- Política -->
-                                <div class="mb-3 form-check d-flex align-items-start">
-                                    <input class="form-check-input me-2 mt-1" type="checkbox" id="privacyPolicy"
-                                        name="privacyPolicy" required>
-                                    <label class="form-check-label" for="privacyPolicy">
-                                        Acepto que se utilicen estos datos para responder a mi solicitud
-                                    </label>
-                                </div>
-
-                                <!-- Botón -->
-                                <div class="d-grid col-md-6 col-lg-3 mx-auto">
-                                    <button type="submit" class="btn btn-dark">
-                                        Solicitar presupuesto
-                                    </button>
-                                </div>
-
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="plantillas" class="py-5">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2>Nuestras Plantillas</h2>
-                    <p>Esto es lo que podemos construir para tu negocio. Elige la que mejor se adapte a tu sector y
-                        personalízala a tu gusto.</p>
-                </div>
-
-                <div class="row justify-content-center g-4">
-                    <!-- Plantilla Bar/Restaurante -->
-                    <div class="col-md-6 col-lg-5">
-                        <div class="card h-100 border-0 shadow-red">
-                            <div class="card-body d-flex flex-column">
-                                <h3 class="card-title">Bar / Restaurante</h3>
-                                <p class="card-text">
-                                    Plantilla con estilo creativo y moderno. Incluye carta de platos, galería de fotos,
-                                    ubicación y formulario de reserva.
-                                </p>
-                                <ul class="list-unstyled text-start mt-3 mb-4">
-                                    <li>✔ Carta/Menú con precios</li>
-                                    <li>✔ Galería de fotos</li>
-                                    <li>✔ Formulario de reserva</li>
-                                    <li>✔ SEO optimizado</li>
-                                </ul>
-                                <a href="templates/bar-restaurante/" class="btn btn-danger mt-auto">Ver plantilla</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Plantilla Clínica -->
-                    <div class="col-md-6 col-lg-5">
-                        <div class="card h-100 border-0 shadow-red">
-                            <div class="card-body d-flex flex-column">
-                                <h3 class="card-title">Clínica</h3>
-                                <p class="card-text">
-                                    Plantilla con estilo glassmorphism, elegante y profesional. Incluye servicios,
-                                    equipo médico, instalaciones y cita previa.
-                                </p>
-                                <ul class="list-unstyled text-start mt-3 mb-4">
-                                    <li>✔ Servicios / Especialidades</li>
-                                    <li>✔ Equipo médico</li>
-                                    <li>✔ Formulario de cita previa</li>
-                                    <li>✔ SEO optimizado</li>
-                                </ul>
-                                <a href="templates/clinica/" class="btn btn-danger mt-auto">Ver plantilla</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Plantilla Entrenador Personal -->
-                    <div class="col-md-6 col-lg-5">
-                        <div class="card h-100 border-0 shadow-red">
-                            <div class="card-body d-flex flex-column">
-                                <h3 class="card-title">Entrenador Personal</h3>
-                                <p class="card-text">
-                                    Plantilla con estilo moderno y oscuro. Incluye servicios, guías descargables,
-                                    asesorías y formulario de contacto.
-                                </p>
-                                <ul class="list-unstyled text-start mt-3 mb-4">
-                                    <li>✔ Guía gratuita descargable</li>
-                                    <li>✔ Sección de asesorías</li>
-                                    <li>✔ Guía privada exclusiva</li>
-                                    <li>✔ SEO optimizado</li>
-                                </ul>
-                                <a href="templates/entrenador-personal/" class="btn btn-danger mt-auto">Ver plantilla</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="clientes" class="py-5 bg-light">
-            <div class="container">
-                <div class="row justify-content-center text-center mb-4">
-                    <div class="col-lg-8">
-                        <h3>Nuestros clientes</h3>
-                        <p class="lead">Empresas que ya confían en WebCharra</p>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center g-4">
-
-                    <!-- Cliente 1 -->
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <div class="card h-100 shadow-red border-0 d-flex flex-column">
-                            <img src="assets/img/logo-divinas.webp" class="card-img-top card-cliente"
-                                alt="Divinas Teatro" loading="lazy">
-                            <div class="card-body text-center d-flex flex-column flex-grow-1">
-                                <h3 class="card-title">Divinas Teatro</h3>
-                                <p class="card-text small">Artes escénicas</p>
-                                <a href="https://divinasteatro.es/" target="_blank"
-                                    class="btn btn-outline-dark btn-md mt-auto">
-                                    Ver web
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Cliente 2 -->
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <div class="card h-100 shadow-red border-0 d-flex flex-column">
-                            <img src="assets/img/relief-logo.webp" class="card-img-top card-cliente"
-                                alt="Relief Carreleur" loading="lazy">
-                            <div class="card-body text-center d-flex flex-column flex-grow-1">
-                                <h3 class="card-title">Relief Carreleur</h3>
-                                <p class="card-text small">Reformas y construcción</p>
-                                <a href="https://www.reliefcarreleur.fr/" target="_blank"
-                                    class="btn btn-outline-dark btn-md mt-auto">
-                                    Ver web
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Cliente 3: Capablanca Salamanca -->
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <div class="card h-100 shadow-red border-0 d-flex flex-column">
-                            <img src="assets/img/capablanca-logo-blue.webp" class="card-img-top card-cliente"
-                                alt="Capablanca Salamanca - Club de Ajedrez" loading="lazy">
-                            <div class="card-body text-center d-flex flex-column flex-grow-1">
-                                <h3 class="card-title">Capablanca Salamanca</h3>
-                                <p class="card-text small">Club de Ajedrez</p>
-                                <a href="https://capablancasalamanca.es/" target="_blank"
-                                    class="btn btn-outline-dark btn-md mt-auto">
-                                    Ver web
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section id="planes-consultoria" class="py-5 section-light">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2>Planes de Consultoría Web</h2>
-                    <p>Elige el nivel de apoyo que necesitas para mejorar tu presencia digital o resolver problemas
-                        técnicos.</p>
-                </div>
-
-                <div class="row g-4">
-
-                    <!-- Plan 1: Revisión Web -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-red text-center">
-                            <div class="card-body d-flex flex-column">
-                                <h3 class="card-title">Revisión de Proyecto</h3>
-                                <p class="card-text">
-                                    Analizamos la web o desarrollo que ya tienes para detectar errores, mejoras y
-                                    oportunidades.
-                                </p>
-                                <ul class="list-unstyled text-start mt-3 mb-4">
-                                    <li>✔ Auditoría técnica</li>
-                                    <li>✔ Revisión de rendimiento</li>
-                                    <li>✔ Mejora SEO básica</li>
-                                    <li>✔ Informe detallado</li>
-                                </ul>
-                                <a href="#contacto" class="btn btn-danger mt-auto">Solicitar</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Plan 2: Freelance -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-red text-center">
-                            <div class="card-body d-flex flex-column">
-                                <h3 class="card-title">Desarrollador Freelance</h3>
-                                <p class="card-text">
-                                    Soporte continuo para tu proyecto: mejoras, nuevas funcionalidades o mantenimiento.
-                                </p>
-                                <ul class="list-unstyled text-start mt-3 mb-4">
-                                    <li>✔ Desarrollo a medida</li>
-                                    <li>✔ Soporte técnico</li>
-                                    <li>✔ Optimización de código</li>
-                                    <li>✔ Integraciones externas</li>
-                                </ul>
-                                <a href="#contacto" class="btn btn-danger mt-auto">Contratar</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Plan 3: Consultoría -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-red text-center">
-                            <div class="card-body d-flex flex-column">
-                                <h3 class="card-title">Consultoría Web</h3>
-                                <p class="card-text">
-                                    Asesoramiento estratégico para escalar tu negocio online y tomar decisiones técnicas
-                                    correctas.
-                                </p>
-                                <ul class="list-unstyled text-start mt-3 mb-4">
-                                    <li>✔ Estrategia digital</li>
-                                    <li>✔ Arquitectura web</li>
-                                    <li>✔ UX/UI y conversión</li>
-                                    <li>✔ Plan de crecimiento</li>
-                                </ul>
-                                <a href="#contacto" class="btn btn-danger mt-auto">Empezar</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="footer-principal" class="bg-dark text-white pt-5 pb-3">
-        <div class="container">
-            <div class="row g-4">
-                <!-- Columna 1: Marca -->
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="assets/img/icons/icon-red.ico" alt="Logo WebCharra" width="40" height="40" class="me-2">
-                        <span class="fs-4 fw-bold">WebCharra</span>
-                    </div>
-                    <p class="text-white-50 small">
-                        Desarrollo web y SEO en Salamanca para pequeñas empresas. Creamos páginas web, optimizamos tu presencia online y te ayudamos a destacar en Google.
-                    </p>
-                </div>
-
-                <!-- Columna 2: Navegación -->
-                <div class="col-6 col-md-2">
-                    <h5 class="text-uppercase fs-6 fw-bold mb-3">Navegación</h5>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="#webcharra" class="text-white-50 text-decoration-none hover-white">Inicio</a></li>
-                        <li class="mb-2"><a href="#servicios-web" class="text-white-50 text-decoration-none hover-white">Servicios</a></li>
-                        <li class="mb-2"><a href="#planes-web" class="text-white-50 text-decoration-none hover-white">Planes</a></li>
-                        <li class="mb-2"><a href="#clientes" class="text-white-50 text-decoration-none hover-white">Clientes</a></li>
-                        <li class="mb-2"><a href="#contacto" class="text-white-50 text-decoration-none hover-white">Contacto</a></li>
-                    </ul>
-                </div>
-
-                <!-- Columna 3: Plantillas -->
-                <div class="col-6 col-md-3">
-                    <h5 class="text-uppercase fs-6 fw-bold mb-3">Plantillas</h5>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="templates/bar-restaurante/" class="text-white-50 text-decoration-none hover-white">Bar / Restaurante</a></li>
-                        <li class="mb-2"><a href="templates/clinica/" class="text-white-50 text-decoration-none hover-white">Clínica</a></li>
-                        <li class="mb-2"><a href="templates/entrenador-personal/" class="text-white-50 text-decoration-none hover-white">Entrenador</a></li>
-                    </ul>
-                </div>
-
-                <!-- Columna 4: Contacto -->
-                <div class="col-md-3">
-                    <h5 class="text-uppercase fs-6 fw-bold mb-3">Contacto</h5>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2 text-white-50">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt me-2" viewBox="0 0 16 16">
-                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                            </svg>
-                            Salamanca, España
-                        </li>
-                        <li class="mb-2">
-                            <a href="mailto:saulmaji@gmail.com" class="text-white-50 text-decoration-none hover-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope me-2" viewBox="0 0 16 16">
-                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-                                </svg>
-                                saulmaji@gmail.com
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="tel:+34634948589" class="text-white-50 text-decoration-none hover-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone me-2" viewBox="0 0 16 16">
-                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                                </svg>
-                                634 948 589
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Línea divisoria y copyright -->
-            <hr class="border-secondary my-4">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0 small text-white-50">© 2026 WebCharra. Todos los derechos reservados.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0 small text-white-50">Hecho con <span class="text-danger">&hearts;</span> en Salamanca</p>
-                </div>
-            </div>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#inicio" aria-label="WebCharra, inicio"><img src="assets/img/icons/icon-red.ico" alt="" width="38" height="38"><span>web<span class="brand-accent">charra.</span></span></a>
+      <nav aria-label="Navegación principal" class="nav-links">
+        <a href="#servicios">Servicios</a><a href="#plantillas">Plantillas</a><a href="#precios">Precios</a><a href="#trabajos">Proyectos</a>
+      </nav>
+      <a class="button button-small" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="signal"></span> ESTUDIO WEB EN SALAMANCA</p>
+          <h1 id="hero-title">Tu negocio merece una web que <em>se haga notar.</em></h1>
+          <p class="hero-lead">Diseño y desarrollo de páginas web en Salamanca para negocios que quieren destacar. Webs rápidas, claras y preparadas para que te encuentren en Google.</p>
+          <div class="hero-actions"><a class="button" href="#contacto">Cuéntanos tu idea <span aria-hidden="true">↗</span></a><a class="text-link" href="#trabajos">Ver proyectos <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-foot"><span class="mini-line"></span> Salamanca y provincia <span class="dot">·</span> Proyectos a medida <span class="dot">·</span> Trato directo</div>
         </div>
-    </footer>
+        <div class="hero-visual" aria-label="Vista conceptual de una web creada para un negocio local">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="floating-tag top-tag"><span class="tag-icon">↗</span><span>Diseño que conecta<br><strong>con tus clientes</strong></span></div>
+          <div class="browser-card glass">
+            <div class="browser-top"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">tu-negocio.es</span><span>↗</span></div>
+            <div class="browser-body"><span class="browser-pill">HECHO EN SALAMANCA</span><div class="browser-heading">Una web con<br><em>identidad propia.</em></div><span class="browser-bar"></span><span class="browser-bar short"></span><span class="browser-cta">Descubrir más ↗</span></div>
+          </div>
+          <div class="floating-tag bottom-tag"><span class="tag-icon red">⌕</span><span>Visible donde importa<br><strong>SEO local desde el inicio</strong></span></div>
+        </div>
+      </div>
+      <div class="hero-bottom wrap"><span>01 / UNA WEB PARA CRECER</span><a href="#servicios">Explorar servicios ↓</a></div>
+    </section>
 
+    <section class="intro section-pad" id="servicios" aria-labelledby="services-title">
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow red-text">LO QUE HACEMOS</p><h2 id="services-title">De la idea a una presencia digital <em>que funciona.</em></h2></div><p>Unimos diseño, desarrollo y visibilidad para que tu página web trabaje a favor de tu negocio en Salamanca.</p></div>
+        <div class="service-grid">
+          <article class="service-card glass-light"><span class="service-num">01 /</span><span class="service-icon" aria-hidden="true">▣</span><h3>Diseño y desarrollo web</h3><p>Páginas web a medida, adaptadas a móvil y fáciles de usar. Desde una web de presentación hasta una presencia digital más completa.</p><span class="service-bottom">Una web que representa tu marca <span>↗</span></span></article>
+          <article class="service-card glass-light"><span class="service-num">02 /</span><span class="service-icon" aria-hidden="true">◎</span><h3>SEO local en Salamanca</h3><p>Organizamos el contenido y la estructura de tu web para ayudar a tus clientes a encontrarte al buscar tus servicios en Salamanca y provincia.</p><span class="service-bottom">Que te encuentren cerca <span>↗</span></span></article>
+          <article class="service-card glass-light"><span class="service-num">03 /</span><span class="service-icon" aria-hidden="true">✳</span><h3>Soporte y evolución</h3><p>Si ya tienes una página, podemos revisar su rendimiento, mejorar su accesibilidad y acompañarte cuando tu negocio necesite crecer.</p><span class="service-bottom">Un proyecto que evoluciona <span>↗</span></span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="local section-pad" aria-labelledby="local-title"><div class="wrap local-grid"><div><p class="eyebrow">CERCA DE TI, CERCA DE TUS CLIENTES</p><h2 id="local-title">Desarrollo web en Salamanca, con los pies en la tierra.</h2><p>Trabajamos con pequeñas empresas, comercios y profesionales de Salamanca y su provincia. Conocemos el valor de un negocio local: una web debe explicar bien lo que haces, transmitir confianza y facilitar que te contacten.</p><a class="button button-outline" href="#contacto">Hablemos de tu negocio ↗</a></div><div class="local-art glass"><img src="assets/img/salamanca-dibujo.webp" width="780" height="520" loading="lazy" alt="Ilustración de Salamanca"><span class="local-label">DESDE SALAMANCA, PARA TU NEGOCIO ↗</span></div></div></section>
+
+    <section class="work section-pad" id="trabajos" aria-labelledby="work-title"><div class="wrap"><div class="section-heading"><div><p class="eyebrow red-text">TRABAJO REAL</p><h2 id="work-title">Proyectos que ya están <em>en marcha.</em></h2></div><p>Algunos negocios y proyectos que han confiado en WebCharra para construir su presencia online.</p></div><div class="work-grid">
+      <article class="work-card"><div class="work-image"><img src="assets/img/capablanca-logo-blue.webp" loading="lazy" alt="Logotipo de Capablanca Salamanca" width="300" height="150"></div><div class="work-info"><div><small>AJEDREZ · SALAMANCA</small><h3>Capablanca Salamanca</h3></div><a href="https://capablancasalamanca.es/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de Capablanca Salamanca">↗</a></div></article>
+      <article class="work-card"><div class="work-image"><img src="assets/img/logo-divinas.webp" loading="lazy" alt="Logotipo de Divinas Teatro" width="300" height="150"></div><div class="work-info"><div><small>ARTES ESCÉNICAS</small><h3>Divinas Teatro</h3></div><a href="https://divinasteatro.es/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de Divinas Teatro">↗</a></div></article>
+      <article class="work-card"><div class="work-image"><img src="assets/img/relief-logo.webp" loading="lazy" alt="Logotipo de Relief Carreleur" width="300" height="150"></div><div class="work-info"><div><small>REFORMAS Y CONSTRUCCIÓN</small><h3>Relief Carreleur</h3></div><a href="https://www.reliefcarreleur.fr/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de Relief Carreleur">↗</a></div></article>
+    </div></div></section>
+
+    <section class="templates section-pad" id="plantillas" aria-labelledby="templates-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow red-text">IDEAS QUE PUEDES VER</p><h2 id="templates-title">Plantillas para imaginar <em>tu próxima web.</em></h2></div><p>Explora nuestras demostraciones por sector. Son puntos de partida que podemos adaptar a tu negocio, no webs idénticas para todos.</p></div>
+        <div class="template-grid">
+          <article class="template-card glass-light"><span class="template-category">HOSTELERÍA / 01</span><div class="template-mark">✳</div><h3>Bar y restaurante</h3><p>Presenta tu carta, tus mejores imágenes, la ubicación y una forma de solicitar reservas.</p><a href="templates/bar-restaurante/" aria-label="Ver plantilla de bar y restaurante">Explorar plantilla <span aria-hidden="true">↗</span></a></article>
+          <article class="template-card glass-light"><span class="template-category">SALUD / 02</span><div class="template-mark">✚</div><h3>Clínica</h3><p>Una presencia clara y profesional para mostrar especialidades, equipo y opciones de cita.</p><a href="templates/clinica/" aria-label="Ver plantilla de clínica">Explorar plantilla <span aria-hidden="true">↗</span></a></article>
+          <article class="template-card glass-light"><span class="template-category">BIENESTAR / 03</span><div class="template-mark">↗</div><h3>Entrenador personal</h3><p>Servicios, asesorías, recursos y contacto en una web pensada para tu marca personal.</p><a href="templates/entrenador-personal/" aria-label="Ver plantilla de entrenador personal">Explorar plantilla <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing section-pad" id="precios" aria-labelledby="pricing-title">
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">PRECIOS SIN RODEOS</p><h2 id="pricing-title">Una web para empezar. <em>Opciones para crecer.</em></h2></div><p>Elige un punto de partida y cuéntanos qué necesitas. Confirmamos el alcance antes de preparar tu presupuesto.</p></div>
+        <div class="pricing-grid">
+          <article class="price-card glass"><p class="price-kicker">PLAN INICIAL</p><h3>Tu negocio, online.</h3><p class="price-number">250 €</p><p>Una página web para presentar tus servicios y facilitar el contacto.</p><ul><li>Creación completa de la web</li><li>Trabajamos con tus imágenes y textos</li><li>Formulario de contacto</li><li>Configuración y puesta en marcha</li><li>Mantenimiento básico durante 3 años</li></ul><a class="button button-outline" href="#contacto">Solicitar información ↗</a></article>
+          <article class="price-card glass featured"><span class="price-badge">PARA NEGOCIOS LOCALES</span><p class="price-kicker">PLAN INICIAL SALAMANCA</p><h3>Crecer desde aquí.</h3><p class="price-number">175 € <span>antes 250 €</span></p><p>El Plan Inicial con descuento especial para negocios de Salamanca.</p><ul><li>Todo lo incluido en el Plan Inicial</li><li>Oferta para negocios locales</li><li>Atención cercana y personalizada</li></ul><a class="button" href="#contacto">Pedir presupuesto ↗</a></article>
+          <article class="price-card glass"><p class="price-kicker">PLAN PREMIUM</p><h3>Un paso más allá.</h3><p class="price-number custom">A medida</p><p>Un proyecto más completo para desarrollar tu presencia digital.</p><ul><li>Todo lo incluido en el Plan Inicial</li><li>Marca e identidad visual</li><li>Campaña de Google Ads</li><li>Integración en Google y buscadores</li><li>Sesión de fotografía</li></ul><a class="button button-outline" href="#contacto">Consultar precio ↗</a></article>
+        </div>
+        <p class="pricing-note">Precios publicados para los planes indicados. Los extras, el alcance final y las condiciones de mantenimiento se detallan en el presupuesto.</p>
+        <div class="consult-panel glass"><div><p class="eyebrow">Y SI YA TIENES UNA WEB...</p><h3>Consultoría web y desarrollo freelance</h3><p>También revisamos proyectos existentes, ayudamos a resolver problemas técnicos y colaboramos como desarrollador freelance para mejoras, integraciones y nuevas funcionalidades. El trabajo se presupuesta según el proyecto.</p></div><a class="button button-outline" href="#contacto">Cuéntanos qué necesitas ↗</a></div>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="proceso" aria-labelledby="process-title"><div class="wrap"><p class="eyebrow">SIN COMPLICACIONES</p><h2 id="process-title">Así hacemos que <em>pase.</em></h2><div class="steps"><div><span>01</span><h3>Nos cuentas tu idea</h3><p>Hablamos de tu negocio, tus objetivos y lo que necesitas de tu nueva web.</p></div><div><span>02</span><h3>Diseñamos tu solución</h3><p>Definimos la estructura, el contenido y el diseño que mejor encajan contigo.</p></div><div><span>03</span><h3>Publicamos y mejoramos</h3><p>Ponemos tu página en marcha y te acompañamos con mejoras y soporte.</p></div></div></div></section>
+
+    <section class="faq section-pad" id="preguntas" aria-labelledby="faq-title"><div class="wrap faq-grid"><div><p class="eyebrow red-text">PREGUNTAS FRECUENTES</p><h2 id="faq-title">Antes de empezar, <em>hablemos claro.</em></h2><p>Las dudas más habituales antes de crear una página web para un negocio local.</p></div><div class="faq-list"><details><summary>¿Hacéis páginas web para negocios de toda la provincia de Salamanca?</summary><p>Sí. Trabajamos con negocios de la ciudad y de la provincia de Salamanca, adaptando el contenido y la web a su público y a su zona de servicio.</p></details><details><summary>¿Mi web estará preparada para verse en móviles?</summary><p>Sí. Diseñamos páginas web adaptables a móviles, tabletas y ordenadores, cuidando la lectura, la navegación y la velocidad.</p></details><details><summary>¿Se puede mejorar el SEO de una web que ya tengo?</summary><p>Sí. Podemos revisar la estructura, los contenidos, el rendimiento y la visibilidad local de una web existente para proponer mejoras concretas.</p></details><details><summary>¿Ofrecéis consultoría web o podéis trabajar como desarrollador freelance?</summary><p>Sí. Ofrecemos revisión de proyectos, asesoramiento técnico y colaboración freelance para mejorar webs existentes, desarrollar funcionalidades o resolver problemas concretos. Preparamos presupuesto según las necesidades.</p></details><details><summary>¿Cuánto cuesta una página web?</summary><p>El Plan Inicial cuesta 250 € y existe una oferta para negocios de Salamanca por 175 €. El Plan Premium y los trabajos de consultoría se presupuestan según el alcance. Te confirmaremos las condiciones antes de empezar.</p></details></div></div></section>
+
+    <section class="contact section-pad" id="contacto" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="eyebrow">EL SIGUIENTE PASO</p><h2 id="contact-title">Tu próxima web empieza <em>con una conversación.</em></h2><p>Cuéntanos qué haces y qué te gustaría conseguir. Te ayudamos a encontrar la solución adecuada para tu negocio en Salamanca.</p><div class="contact-direct"><a href="tel:+34634948589">634 948 589 ↗</a><a href="mailto:saulmaji@gmail.com">saulmaji@gmail.com ↗</a><a href="https://wa.me/34634948589?text=Hola%2C%20quiero%20hablar%20sobre%20una%20p%C3%A1gina%20web" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp ↗</a></div></div><form class="contact-form glass" action="https://formsubmit.co/saulmaji@gmail.com" method="POST"><h3>Cuéntanos tu proyecto</h3><p>Sin compromiso. Te responderemos personalmente.</p><input type="hidden" name="_subject" value="Nueva solicitud desde la home - WebCharra"><input type="hidden" name="_captcha" value="false"><div class="honey" aria-hidden="true"><label for="website">Sitio web</label><input id="website" type="text" name="_honey" tabindex="-1" autocomplete="off"></div><label for="nombre">Tu nombre</label><input id="nombre" name="Nombre" type="text" autocomplete="name" required placeholder="¿Cómo te llamas?"><label for="email">Tu email</label><input id="email" name="Email" type="email" autocomplete="email" required placeholder="tu@email.com"><label for="mensaje">¿En qué podemos ayudarte?</label><textarea id="mensaje" name="Mensaje" rows="4" required placeholder="Háblanos de tu negocio y de la web que necesitas"></textarea><label class="consent"><input type="checkbox" name="privacyPolicy" required><span>Acepto que se utilicen mis datos para responder a esta solicitud.</span></label><button class="button" type="submit">Enviar mensaje ↗</button></form></div></section>
+  </main>
+
+  <footer><div class="wrap footer-top"><div><a class="brand" href="#inicio"><img src="assets/img/icons/icon-red.ico" alt="" width="38" height="38"><span>web<span class="brand-accent">charra.</span></span></a><p>Diseño y desarrollo web en Salamanca.<br>Hecho para negocios con ganas de crecer.</p></div><div class="footer-links"><a href="#servicios">Servicios</a><a href="#plantillas">Plantillas</a><a href="#precios">Precios</a><a href="#trabajos">Proyectos</a><a href="#preguntas">Preguntas frecuentes</a><a href="#contacto">Contacto</a></div></div><div class="wrap footer-bottom"><span>© 2026 WebCharra · Salamanca, España</span><span>Hecho en Salamanca</span></div></footer>
 </body>
-
 </html>
