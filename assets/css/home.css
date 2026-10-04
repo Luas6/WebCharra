@@ -44,6 +44,11 @@
 .button:not(.button-outline){border-color:var(--deep-red)}
 .local-art img{height:auto}
 
+/* Un único enlace por proyecto: imagen, título y espacio de la tarjeta. */
+.work-card{display:block}
+.work-arrow{border:1px solid #d8dae1;border-radius:50%;width:38px;height:38px;display:grid;place-items:center;flex:none}
+.work-card:hover .work-arrow,.work-card:focus-visible .work-arrow{background:var(--red);color:white;border-color:var(--red)}
+
 /* Movimiento de la home: mejora progresiva, sin ocultar contenido ni mover el layout. */
 .hero-bottom{gap:14px;flex-wrap:wrap;align-items:center}
 .hero-visual{perspective:1000px}
