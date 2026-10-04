@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UI Lab · Componentes interactivos | WebCharra</title>
+  <meta name="description" content="Laboratorio de componentes WebCharra: glassmorphism, animaciones e interacciones UX/UI. Prueba los ejemplos y consulta su código de referencia.">
+  <!-- Laboratorio de referencia, no una landing comercial. -->
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://webcharra.es/componentes/">
+  <meta name="theme-color" content="#2B2B2B">
+  <link rel="icon" href="../assets/img/icons/icon-red.ico">
+  <meta property="og:title" content="UI Lab · Interfaces que se sienten | WebCharra">
+  <meta property="og:description" content="Un laboratorio de diseño e interacción. Explora, prueba y encuentra tu próxima idea.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webcharra.es/componentes/">
+  <meta property="og:image" content="https://webcharra.es/assets/img/salamanca.webp">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="WebCharra">
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>*,*::before,*::after{animation:none!important}.flow-card,.reference,.filters,#save-demo{display:none}</style></noscript>
+  <script src="lab.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"CollectionPage","name":"UI Lab · Componentes WebCharra","url":"https://webcharra.es/componentes/","inLanguage":"es","description":"Galería de referencia de componentes UX/UI interactivos y animaciones.","publisher":{"@type":"Organization","name":"WebCharra","url":"https://webcharra.es/"}}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="wrap header">
+    <a class="brand" href="../"><img src="../assets/img/icons/icon-red.ico" width="30" height="30" alt=""><span>webcharra<span class="red">.</span></span><span class="brand-label">/ UI LAB</span></a>
+    <div class="header-actions"><a href="#coleccion">Explorar ↘</a><button class="quiet motion-control" type="button" aria-pressed="false" disabled>Pausar efectos</button></div>
+  </header>
+  <main id="contenido">
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> EXPERIMENTOS DIGITALES / VOL. 01</p><h1 id="hero-title">No solo se ve.<br><span>Se siente.</span></h1><p class="lead">Un pequeño laboratorio de grandes interacciones.<br>Texturas, movimiento y detalles que convierten una interfaz en una experiencia.</p><a class="primary" href="#coleccion">Entrar al laboratorio ↘</a><p class="hero-note">HTML + CSS + JS · Sin dependencias · Hecho para experimentar</p></div>
+      <div class="sculpture" aria-hidden="true"><div class="aura"></div><div class="ring ring-one"></div><div class="ring ring-two"></div><div class="ring ring-three"></div><div class="core"><span>W<span class="red">.</span></span></div><div class="floating-label label-top">MOTION IS A LANGUAGE</div><div class="floating-label label-bottom"><span class="status-dot"></span> Diseñado para sentir</div><span class="axis axis-x"></span><span class="axis axis-y"></span><span class="coordinate">40.96° N / 5.66° W</span></div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>MENOS FRICCIÓN <b>✳</b> MÁS INTENCIÓN <b>✳</b> DISEÑO EN MOVIMIENTO <b>✳</b> WEBCHARRA UI LAB <b>✳</b></span><span>MENOS FRICCIÓN <b>✳</b> MÁS INTENCIÓN <b>✳</b> DISEÑO EN MOVIMIENTO <b>✳</b> WEBCHARRA UI LAB <b>✳</b></span></div></div>
+    <section class="wrap collection" id="coleccion" aria-labelledby="collection-title">
+      <div class="section-heading"><div><p class="eyebrow">LA COLECCIÓN</p><h2 id="collection-title">Ideas que puedes <em>tocar.</em></h2></div><p>No son capturas. Son componentes reales.<br>Interactúa con cada uno y mira cómo está pensado.</p></div>
+      <noscript><p class="notice">Activa JavaScript para probar pestañas, filtros, formulario y fichas de código. Puedes explorar los diseños y el acordeón sin él.</p></noscript>
+      <div class="collection-toolbar"><div class="filters" role="group" aria-label="Filtrar componentes"><button type="button" data-filter="all" aria-pressed="true">Todos <span>06</span></button><button type="button" data-filter="visual" aria-pressed="false">Visual</button><button type="button" data-filter="interaction" aria-pressed="false">Interacción</button><button type="button" data-filter="flow" aria-pressed="false">Flujos UX</button></div><span id="result-count" role="status">6 experimentos</span></div>
+      <div class="bento">
+        <article class="experiment wide" data-category="visual" id="spotlight">
+          <div class="demo spotlight-demo"><div class="spotlight" tabindex="0" aria-label="Tarjeta decorativa con iluminación y profundidad al mover el puntero"><div class="spot-glow" aria-hidden="true"></div><div class="pass-top"><span>WEBCHARRA STUDIO</span><span aria-hidden="true">↗</span></div><div class="pass-symbol" aria-hidden="true">✳</div><p class="pass-title">Una nueva<br>dimensión.</p><div class="pass-bottom"><span>DIGITAL EXPERIENCE</span><span>001 / ∞</span></div></div><span class="demo-hint">Mueve el puntero · En móvil, toca la tarjeta</span></div>
+          <div class="experiment-info"><div><p class="eyebrow">01 / SUPERFICIES</p><h3>Spotlight & profundidad</h3><p>Una luz que acompaña al cursor. Perspectiva sutil, sin perder el foco en el contenido.</p></div><button class="reference" data-reference="spotlight" aria-label="Ver ficha de Spotlight y profundidad">↗</button></div>
+        </article>
+        <article class="experiment" data-category="interaction" id="tabs-demo">
+          <div class="demo tabs-demo"><div class="mini-top"><span class="mini-icon" aria-hidden="true">⌁</span><span>Tu espacio de trabajo</span><span class="avatar" aria-hidden="true">W</span></div><div class="tabs" role="tablist" aria-label="Vista del panel"><button role="tab" id="tab-design" aria-controls="panel-design" aria-selected="true" tabindex="0">Diseño</button><button role="tab" id="tab-build" aria-controls="panel-build" aria-selected="false" tabindex="-1">Código</button><button role="tab" id="tab-launch" aria-controls="panel-launch" aria-selected="false" tabindex="-1">Lanzar</button></div><div class="tab-panel" id="panel-design" role="tabpanel" aria-labelledby="tab-design" tabindex="0"><span class="pill">EXPLORAR</span><h4>Primero, la idea.</h4><p>Del primer boceto a una identidad que se reconoce.</p><div class="swatches" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="mock-line" aria-hidden="true"></div><div class="mock-line short" aria-hidden="true"></div></div><div class="tab-panel" id="panel-build" role="tabpanel" aria-labelledby="tab-build" tabindex="0" hidden><span class="pill">CONSTRUIR</span><h4>Simple por dentro.</h4><p>Componentes pequeños. Intención en cada línea.</p><pre class="mini-code"><code>&lt;button class="idea"&gt;
+  Hazlo posible ↗
+&lt;/button&gt;</code></pre></div><div class="tab-panel" id="panel-launch" role="tabpanel" aria-labelledby="tab-launch" tabindex="0" hidden><span class="pill">PUBLICAR</span><h4>Listo para salir.</h4><p>Una última revisión antes de compartir tu proyecto.</p><ul class="check-list"><li>✓ Adaptación móvil</li><li>✓ Navegación por teclado</li><li>✓ Contenido revisado</li></ul></div></div>
+          <div class="experiment-info"><div><p class="eyebrow">02 / NAVEGACIÓN</p><h3>Pestañas con intención</h3><p>Cambia de contexto sin cambiar de página. Prueba también las flechas del teclado.</p></div><button class="reference" data-reference="tabs" aria-label="Ver ficha de pestañas">↗</button></div>
+        </article>
+        <article class="experiment" data-category="interaction" id="compare-demo">
+          <div class="demo compare-demo"><div class="comparison" style="--split:50%"><div class="compare-side compare-after"><span class="compare-tag">AHORA</span><span class="compare-logo">studio<span>✳</span></span><p>Tu próxima<br><em>gran idea.</em></p><span class="fake-button">Empieza aquí ↗</span></div><div class="compare-side compare-before"><span class="compare-tag">ANTES</span><span class="old-logo">Mi página web</span><div class="old-nav">Inicio &nbsp; Servicios &nbsp; Contacto</div><p>Bienvenido a<br>nuestra web</p><span class="old-box">Conoce nuestros servicios</span></div><div class="compare-divider" aria-hidden="true"><span>↔</span></div></div><label class="range-label" for="compare-range">Desliza para comparar <output id="compare-output" for="compare-range">50% antes</output></label><input id="compare-range" type="range" min="0" max="100" value="50" aria-label="Porcentaje visible del diseño anterior"></div>
+          <div class="experiment-info"><div><p class="eyebrow">03 / NARRATIVA VISUAL</p><h3>Antes. Después. Wow.</h3><p>Cuenta una transformación con un gesto. Un control nativo, también accesible con teclado.</p></div><button class="reference" data-reference="compare" aria-label="Ver ficha del comparador">↗</button></div>
+        </article>
+        <article class="experiment wide" data-category="flow" id="stepper-demo">
+          <div class="demo stepper-demo"><div class="flow-intro"><span class="pill">ONBOARDING</span><h4>Grandes proyectos.<br><span>Pequeños pasos.</span></h4><p>Un formulario que pregunta lo justo, en el momento justo.</p><span class="flow-caption">DEMO · NO ENVÍA DATOS</span></div><form class="flow-card" id="brief-form"><ol class="step-indicators" aria-label="Pasos del formulario"><li aria-current="step">01</li><li>02</li><li>03</li></ol><div class="step" data-step="0"><h5 tabindex="-1">¿Qué quieres crear?</h5><fieldset><legend class="sr-only">Tipo de proyecto</legend><label class="choice"><input type="radio" name="project" value="Web de negocio" checked><span>Web de negocio</span><span aria-hidden="true">↗</span></label><label class="choice"><input type="radio" name="project" value="Portfolio creativo"><span>Portfolio creativo</span><span aria-hidden="true">↗</span></label></fieldset></div><div class="step" data-step="1" hidden><h5 tabindex="-1">Ponle un nombre.</h5><label for="project-name">Nombre del proyecto</label><input id="project-name" type="text" maxlength="50" placeholder="Ej. Estudio Norte" aria-describedby="name-help name-error"><p id="name-help" class="field-help">Usa un nombre ficticio para probar.</p><p id="name-error" class="field-error" hidden>Escribe al menos dos caracteres.</p></div><div class="step" data-step="2" hidden><h5 tabindex="-1">Tu idea, en resumen.</h5><dl class="summary"><dt>Tipo</dt><dd id="summary-type"></dd><dt>Proyecto</dt><dd id="summary-name"></dd></dl><p class="field-help">Nada se envía ni se guarda fuera de esta página.</p></div><div class="flow-controls"><button class="quiet" id="flow-back" type="button" disabled>Atrás</button><button class="primary" id="flow-next" type="submit">Continuar →</button></div><p class="sr-only" id="flow-status" role="status"></p></form></div>
+          <div class="experiment-info"><div><p class="eyebrow">04 / FLUJOS UX</p><h3>Menos preguntas. Más avance.</h3><p>Progreso visible, validación amable y un resumen antes de terminar. Sin perder lo escrito al volver.</p></div><button class="reference" data-reference="stepper" aria-label="Ver ficha del formulario por pasos">↗</button></div>
+        </article>
+        <article class="experiment wide" data-category="flow" id="accordion-demo">
+          <div class="demo accordion-demo"><div><span class="eyebrow">DISEÑO QUE ESCUCHA</span><h4>Lo complejo,<br><em>hecho simple.</em></h4><p>Información cuando la necesitas.<br>No toda de golpe.</p></div><div class="accordion"><details open><summary><span>01</span> ¿Por qué usar movimiento?</summary><p>Para explicar una relación, señalar un cambio o confirmar una acción. La animación debe ayudar, no distraer.</p></details><details><summary><span>02</span> ¿Y si prefiero menos efectos?</summary><p>Este laboratorio respeta el ajuste de movimiento reducido del dispositivo. También puedes pausar los efectos desde la cabecera.</p></details><details><summary><span>03</span> ¿Funciona sin JavaScript?</summary><p>Este acordeón sí: utiliza los elementos nativos details y summary. El contenido permanece disponible sin scripts.</p></details></div></div>
+          <div class="experiment-info"><div><p class="eyebrow">05 / DIVULGACIÓN PROGRESIVA</p><h3>Espacio para las respuestas</h3><p>Acordeón editorial con apertura suave. Una solución nativa, sin reinventar controles.</p></div><button class="reference" data-reference="accordion" aria-label="Ver ficha del acordeón">↗</button></div>
+        </article>
+        <article class="experiment" data-category="visual" id="feedback-demo">
+          <div class="demo feedback-demo"><div class="feedback-orbit" aria-hidden="true"><span>✓</span></div><h4>Los detalles<br>lo cambian todo.</h4><button type="button" class="save-button" id="save-demo"><span class="save-icon" aria-hidden="true">↗</span><span id="save-label">Simular publicación</span></button><p>Reposo → carga → confirmación.<br>Una demo, no una publicación real.</p><div class="feedback-status" id="save-status" role="status"></div></div>
+          <div class="experiment-info"><div><p class="eyebrow">06 / MICROINTERACCIONES</p><h3>Una respuesta que se nota</h3><p>Un estado para cada momento. Sin dobles clics ni dudas sobre qué está pasando.</p></div><button class="reference" data-reference="feedback" aria-label="Ver ficha de microinteracciones">↗</button></div>
+        </article>
+      </div>
+    </section>
+    <section class="wrap closing"><p class="eyebrow">BONITO ES SOLO EL PRINCIPIO</p><h2>El mejor efecto es<br>que todo <em>funcione.</em></h2><p>Teclado, móvil, contraste y movimiento reducido.<br>La experiencia también está en lo que no se ve.</p><a class="primary" href="../#contacto">Llevemos una idea a tu web ↗</a></section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="../">webcharra<span class="red">.</span></a><span>UI Lab · Referencias y experimentos</span><a href="#contenido">Volver arriba ↑</a></footer>
+  <dialog id="reference-dialog" aria-labelledby="reference-title"><div class="dialog-head"><span class="eyebrow">ANATOMÍA DEL COMPONENTE</span><button class="quiet" id="close-dialog" aria-label="Cerrar ficha">✕</button></div><h2 id="reference-title"></h2><p id="reference-description"></p><h3>Cuándo usarlo</h3><p id="reference-use"></p><h3>Cuida estos detalles</h3><p id="reference-access"></p><div class="code-heading"><span>Fragmento de referencia · No es el componente completo</span><button class="quiet" id="copy-code" type="button">Copiar código</button></div><pre tabindex="0" aria-label="Código de referencia"><code id="reference-code"></code></pre><p id="copy-status" role="status"></p><p class="file-note">Implementación completa: <a href="styles.css">styles.css</a> + <a href="lab.js">lab.js</a>.</p></dialog>
+</body>
+</html>
