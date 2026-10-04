@@ -71,6 +71,7 @@
 }
 
 /* Cada paso se anima una sola vez al aparecer; el texto siempre está disponible. */
+.motion-trigger{position:absolute;left:50%;bottom:1px;width:1px;height:1px;pointer-events:none}
 .steps>div{position:relative;--step-delay:0ms}
 .steps>div:nth-child(2){--step-delay:300ms}
 .steps>div:nth-child(3){--step-delay:600ms}

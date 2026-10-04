@@ -34,15 +34,26 @@
     });
     heroObserver.observe(visual);
 
+    // Observar el borde inferior, no un porcentaje de la tarjeta: también funciona
+    // cuando una tarjeta es más alta que la pantalla. El margen deja ver el trazo
+    // incluso durante los 24 px de desplazamiento inicial de la animación.
     const revealObserver = new IntersectionObserver(entries => {
       for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        entry.target.classList.add('is-revealed');
-        if (reducedMotion.matches || document.hidden) entry.target.classList.add('motion-complete');
+        if (!entry.isIntersecting || entry.intersectionRatio < 1) continue;
+        const item = entry.target.parentElement;
+        item.classList.add('is-revealed');
+        if (reducedMotion.matches || document.hidden) item.classList.add('motion-complete');
         revealObserver.unobserve(entry.target);
+        entry.target.remove();
       }
-    }, {threshold:0.2});
-    reveals.forEach(item => revealObserver.observe(item));
+    }, {threshold:1, rootMargin:'0px 0px -56px 0px'});
+    reveals.forEach(item => {
+      const trigger = document.createElement('div');
+      trigger.className = 'motion-trigger';
+      trigger.setAttribute('aria-hidden', 'true');
+      item.append(trigger);
+      revealObserver.observe(trigger);
+    });
   } else {
     // Sin observadores, se conserva la versión estática y legible.
     reveals.forEach(item => item.classList.add('is-revealed', 'motion-complete'));
