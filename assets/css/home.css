@@ -44,6 +44,14 @@
 .button:not(.button-outline){border-color:var(--deep-red)}
 .local-art img{height:auto}
 
+/* Primera capa de privacidad: visible antes de enviar el formulario. */
+.contact-form .privacy-summary{padding:18px;border:1px solid #ffffff46;border-radius:10px;margin-top:12px;background:#00000018}
+.contact-form .privacy-summary p{margin:0 0 9px;font-size:.8rem;line-height:1.65;color:#e0e3ea}
+.contact-form .privacy-summary p:last-child{margin-bottom:0}
+.contact-form .privacy-summary a,.contact-form .consent a{text-decoration:underline;text-underline-offset:3px}
+.contact-form .privacy-summary strong{color:white}
+.contact-form .consent input{flex:none;width:18px;height:18px}
+
 /* Un único enlace por proyecto: imagen, título y espacio de la tarjeta. */
 .work-card{display:block}
 .work-arrow{border:1px solid #d8dae1;border-radius:50%;width:38px;height:38px;display:grid;place-items:center;flex:none}
