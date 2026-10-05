@@ -18,9 +18,11 @@
   <meta property="og:image" content="https://webcharra.es/assets/img/salamanca.webp">
   <meta property="og:locale" content="es_ES">
   <meta property="og:site_name" content="WebCharra">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap-utilities.min.css">
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/legal.css">
   <script src="assets/js/home-motion.js" defer></script>
+  <script src="assets/js/home-navigation.js" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,15 +46,15 @@
   }
   </script>
 </head>
-<body>
+<body class="home-page">
   <a class="skip" href="#contenido">Saltar al contenido</a>
-  <header class="site-header">
-    <div class="wrap nav-inner">
+  <header class="site-header position-sticky top-0">
+    <div class="wrap nav-inner d-grid d-lg-flex align-items-center justify-content-between">
       <a class="brand" href="#inicio" aria-label="WebCharra, inicio"><img src="assets/img/icons/icon-red.ico" alt="" width="38" height="38"><span>web<span class="brand-accent">charra.</span></span></a>
-      <nav aria-label="Navegación principal" class="nav-links">
-        <a href="#servicios">Servicios</a><a href="#plantillas">Plantillas</a><a href="#precios">Precios</a><a href="#trabajos">Proyectos</a>
+      <nav aria-label="Navegación principal" class="nav-links d-flex align-items-center">
+        <a href="#trabajos">Proyectos</a><a href="#servicios">Servicios</a><a href="#precios">Precios</a><a href="#plantillas">Demos</a>
       </nav>
-      <a class="button button-small" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+      <a class="button button-small" href="#contacto">Pedir presupuesto <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
@@ -62,91 +64,138 @@
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span class="signal"></span> ESTUDIO WEB EN SALAMANCA</p>
-          <h1 id="hero-title">Tu negocio merece una web que <em>se haga notar.</em></h1>
-          <p class="hero-lead">Diseño y desarrollo de páginas web en Salamanca para negocios que quieren destacar. Webs rápidas, claras y preparadas para que te encuentren en Google.</p>
-          <div class="hero-actions"><a class="button" href="#contacto">Cuéntanos tu idea <span aria-hidden="true">↗</span></a><a class="text-link" href="#trabajos">Ver proyectos <span aria-hidden="true">↗</span></a></div>
-          <div class="hero-foot"><span class="mini-line"></span> Salamanca y provincia <span class="dot">·</span> Proyectos a medida <span class="dot">·</span> Trato directo</div>
+          <h1 id="hero-title">Páginas web en Salamanca <em>para conseguir clientes.</em></h1>
+          <p class="hero-lead">Presenta tus servicios, recibe consultas o simplifica tareas con una carta digital, un portal o automatizaciones. Analizamos qué necesita tu negocio, lo desarrollamos y te damos soporte tras publicarlo.</p>
+          <div class="hero-actions"><a class="button" href="#contacto">Pedir presupuesto <span aria-hidden="true">↗</span></a><a class="text-link" href="#trabajos">Ver proyectos <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-foot"><span class="mini-line"></span><a href="#precios">Plan Inicial Salamanca: <strong>200 € · IVA incluido</strong> ↗</a></div>
         </div>
         <div class="hero-visual" aria-label="Vista conceptual de una web creada para un negocio local">
           <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
-          <div class="floating-tag top-tag"><span class="tag-icon">↗</span><span>Diseño que conecta<br><strong>con tus clientes</strong></span></div>
+          <div class="floating-tag top-tag"><span class="tag-icon">↗</span><span>Tus servicios y tu contacto<br><strong>también en el móvil</strong></span></div>
           <div class="browser-card glass">
             <div class="browser-top"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">tu-negocio.es</span><span>↗</span></div>
-            <div class="browser-body"><span class="browser-pill">HECHO EN SALAMANCA</span><div class="browser-heading">Una web con<br><em>identidad propia.</em></div><span class="browser-bar"></span><span class="browser-bar short"></span><span class="browser-cta">Descubrir más ↗</span></div>
+            <div class="browser-body"><span class="browser-pill">TU NEGOCIO EN SALAMANCA</span><div class="browser-heading">Tus servicios.<br><em>A un clic.</em></div><span class="browser-bar"></span><span class="browser-bar short"></span><span class="browser-cta">Solicitar información ↗</span></div>
           </div>
-          <div class="floating-tag bottom-tag"><span class="tag-icon red">⌕</span><span>Visible donde importa<br><strong>SEO local desde el inicio</strong></span></div>
+          <div class="floating-tag bottom-tag"><span class="tag-icon red">⌕</span><span>Contenido organizado<br><strong>para Google y buscadores con IA</strong></span></div>
         </div>
       </div>
-      <div class="hero-bottom wrap"><span>01 / UNA WEB PARA CRECER</span><a href="#servicios">Explorar servicios ↓</a></div>
+      <div class="hero-bottom wrap"><span>NEGOCIOS DE SALAMANCA Y PROVINCIA</span><a href="#trabajos">Ver webs publicadas ↓</a></div>
+    </section>
+
+    <section class="work section-pad" id="trabajos" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow red-text">NUESTROS CLIENTES</p><h2 id="work-title">Qué necesitaban.<br><em>Qué hicimos.</em></h2></div><p>Compartir información, presentar obras o ganar visibilidad local: tres clientes con objetivos distintos y soluciones adaptadas a cada uno.</p></div>
+        <div class="work-grid">
+          <article class="work-card d-flex flex-column" aria-labelledby="capablanca-title">
+            <div class="work-image"><img src="assets/img/capablanca-logo-blue.webp" loading="lazy" alt="Logotipo de Capablanca Salamanca" width="300" height="150"></div>
+            <div class="case-body p-4 d-flex flex-column flex-grow-1">
+              <p class="case-sector">ASOCIACIÓN · AJEDREZ</p>
+              <h3 id="capablanca-title">Capablanca Salamanca</h3>
+              <dl class="case-details">
+                <dt>Qué necesitaban</dt><dd>Un espacio para compartir logros e información con la comunidad de esta asociación sin ánimo de lucro.</dd>
+                <dt>Qué hicimos</dt><dd>Desarrollamos una web de estilo clásico, tal como nos pidieron, con un presupuesto reducido para la asociación.</dd>
+              </dl>
+              <p class="case-outcome mt-auto"><strong>Entregada en una semana.</strong> Un espacio propio para mantener informada a su comunidad.</p>
+              <a class="case-link d-flex align-items-center justify-content-between gap-2" href="https://capablancasalamanca.es/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de Capablanca Salamanca (nueva pestaña)">Visitar web <span class="work-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="work-card d-flex flex-column" aria-labelledby="divinas-title">
+            <div class="work-image"><img src="assets/img/logo-divinas.webp" loading="lazy" alt="Logotipo de Divinas Teatro" width="300" height="150"></div>
+            <div class="case-body p-4 d-flex flex-column flex-grow-1">
+              <p class="case-sector">COMPAÑÍA · ARTES ESCÉNICAS</p>
+              <h3 id="divinas-title">Divinas Teatro</h3>
+              <dl class="case-details">
+                <dt>Qué necesitaban</dt><dd>Una web visual y profesional para anunciar sus obras y presentar la compañía en los certámenes a los que se postulan.</dd>
+                <dt>Qué hicimos</dt><dd>Creamos la web y actualizamos sus próximas actuaciones. También les ayudamos con inscripciones, generación de contenidos y otras necesidades informáticas.</dd>
+              </dl>
+              <p class="case-outcome mt-auto"><strong>Acompañamiento continuo.</strong> Actualizaciones de la programación y asistencia informática para la compañía.</p>
+              <a class="case-link d-flex align-items-center justify-content-between gap-2" href="https://divinasteatro.es/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de Divinas Teatro (nueva pestaña)">Visitar web <span class="work-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="work-card d-flex flex-column" aria-labelledby="relief-title">
+            <div class="work-image"><img src="assets/img/relief-logo.webp" loading="lazy" alt="Logotipo de Relief Carreleur" width="300" height="150"></div>
+            <div class="case-body p-4 d-flex flex-column flex-grow-1">
+              <p class="case-sector">REFORMAS · POSICIONAMIENTO LOCAL</p>
+              <h3 id="relief-title">Relief Carreleur</h3>
+              <dl class="case-details">
+                <dt>Qué necesitaba</dt><dd>Ganar visibilidad en las búsquedas de su ciudad y sector para que más clientes encontraran sus servicios.</dd>
+                <dt>Qué hicimos</dt><dd>Creamos su identidad de marca y trabajamos su presencia en Google Maps y Páginas Amarillas. Le damos soporte continuo para mejorar su posicionamiento.</dd>
+              </dl>
+              <p class="case-outcome mt-auto"><strong>Decenas de clics en su web cada mes.</strong> Posiciones destacadas en las búsquedas principales de su ciudad y sector.</p>
+              <a class="case-link d-flex align-items-center justify-content-between gap-2" href="https://www.reliefcarreleur.fr/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de Relief Carreleur (nueva pestaña)">Visitar web <span class="work-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section class="intro section-pad" id="servicios" aria-labelledby="services-title">
-      <div class="wrap"><div class="section-heading"><div><p class="eyebrow red-text">LO QUE HACEMOS</p><h2 id="services-title">De la idea a una presencia digital <em>que funciona.</em></h2></div><p>Unimos diseño, desarrollo y visibilidad para que tu página web trabaje a favor de tu negocio en Salamanca.</p></div>
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow red-text">LO QUE HACEMOS</p><h2 id="services-title">Asesoramiento, desarrollo <em>y mejora continua.</em></h2></div><p>Partimos de tus objetivos: atraer clientes, convertir visitas en consultas o reducir tareas manuales. Te ayudamos a decidir qué desarrollar y qué priorizar.</p></div>
         <div class="service-grid">
-          <article class="service-card glass-light"><span class="service-num">01 /</span><span class="service-icon" aria-hidden="true">▣</span><h3>Diseño y desarrollo web</h3><p>Páginas web a medida, adaptadas a móvil y fáciles de usar. Desde una web de presentación hasta una presencia digital más completa.</p><span class="service-bottom">Una web que representa tu marca <span>↗</span></span></article>
-          <article class="service-card glass-light"><span class="service-num">02 /</span><span class="service-icon" aria-hidden="true">◎</span><h3>SEO local en Salamanca</h3><p>Organizamos el contenido y la estructura de tu web para ayudar a tus clientes a encontrarte al buscar tus servicios en Salamanca y provincia.</p><span class="service-bottom">Que te encuentren cerca <span>↗</span></span></article>
-          <article class="service-card glass-light"><span class="service-num">03 /</span><span class="service-icon" aria-hidden="true">✳</span><h3>Soporte y evolución</h3><p>Si ya tienes una página, podemos revisar su rendimiento, mejorar su accesibilidad y acompañarte cuando tu negocio necesite crecer.</p><span class="service-bottom">Un proyecto que evoluciona <span>↗</span></span></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="local section-pad" aria-labelledby="local-title"><div class="wrap local-grid"><div><p class="eyebrow">CERCA DE TI, CERCA DE TUS CLIENTES</p><h2 id="local-title">Desarrollo web en Salamanca, con los pies en la tierra.</h2><p>Trabajamos con pequeñas empresas, comercios y profesionales de Salamanca y su provincia. Conocemos el valor de un negocio local: una web debe explicar bien lo que haces, transmitir confianza y facilitar que te contacten.</p><a class="button button-outline" href="#contacto">Hablemos de tu negocio ↗</a></div><div class="local-art glass"><img src="assets/img/salamanca-dibujo.webp" width="780" height="520" loading="lazy" alt="Ilustración de Salamanca"><span class="local-label">DESDE SALAMANCA, PARA TU NEGOCIO ↗</span></div></div></section>
-
-    <section class="work section-pad" id="trabajos" aria-labelledby="work-title"><div class="wrap"><div class="section-heading"><div><p class="eyebrow red-text">TRABAJO REAL</p><h2 id="work-title">Proyectos que ya están <em>en marcha.</em></h2></div><p>Algunos negocios y proyectos que han confiado en WebCharra para construir su presencia online.</p></div><div class="work-grid">
-      <a class="work-card" href="https://capablancasalamanca.es/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de Capablanca Salamanca (nueva pestaña)"><div class="work-image"><img src="assets/img/capablanca-logo-blue.webp" loading="lazy" alt="Logotipo de Capablanca Salamanca" width="300" height="150"></div><div class="work-info"><div><small>AJEDREZ · SALAMANCA</small><h3>Capablanca Salamanca</h3></div><span class="work-arrow" aria-hidden="true">↗</span></div></a>
-      <a class="work-card" href="https://divinasteatro.es/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de Divinas Teatro (nueva pestaña)"><div class="work-image"><img src="assets/img/logo-divinas.webp" loading="lazy" alt="Logotipo de Divinas Teatro" width="300" height="150"></div><div class="work-info"><div><small>ARTES ESCÉNICAS</small><h3>Divinas Teatro</h3></div><span class="work-arrow" aria-hidden="true">↗</span></div></a>
-      <a class="work-card" href="https://www.reliefcarreleur.fr/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de Relief Carreleur (nueva pestaña)"><div class="work-image"><img src="assets/img/relief-logo.webp" loading="lazy" alt="Logotipo de Relief Carreleur" width="300" height="150"></div><div class="work-info"><div><small>REFORMAS Y CONSTRUCCIÓN</small><h3>Relief Carreleur</h3></div><span class="work-arrow" aria-hidden="true">↗</span></div></a>
-    </div></div></section>
-
-    <section class="templates section-pad" id="plantillas" aria-labelledby="templates-title">
-      <div class="wrap">
-        <div class="section-heading"><div><p class="eyebrow red-text">IDEAS QUE PUEDES VER</p><h2 id="templates-title">Plantillas para imaginar <em>tu próxima web.</em></h2></div><p>Explora nuestras demostraciones por sector. Son puntos de partida que podemos adaptar a tu negocio, no webs idénticas para todos.</p></div>
-        <div class="template-grid">
-          <article class="template-card glass-light"><span class="template-category">HOSTELERÍA / 01</span><div class="template-mark">✳</div><h3>Bar y restaurante</h3><p>Presenta tu carta, tus mejores imágenes, la ubicación y una forma de solicitar reservas.</p><a href="templates/bar-restaurante/" aria-label="Ver plantilla de bar y restaurante">Explorar plantilla <span aria-hidden="true">↗</span></a></article>
-          <article class="template-card glass-light"><span class="template-category">SALUD / 02</span><div class="template-mark">✚</div><h3>Clínica</h3><p>Una presencia clara y profesional para mostrar especialidades, equipo y opciones de cita.</p><a href="templates/clinica/" aria-label="Ver plantilla de clínica">Explorar plantilla <span aria-hidden="true">↗</span></a></article>
-          <article class="template-card glass-light"><span class="template-category">BIENESTAR / 03</span><div class="template-mark">↗</div><h3>Entrenador personal</h3><p>Servicios, asesorías, recursos y contacto en una web pensada para tu marca personal.</p><a href="templates/entrenador-personal/" aria-label="Ver plantilla de entrenador personal">Explorar plantilla <span aria-hidden="true">↗</span></a></article>
+          <article class="service-card glass-light"><span class="service-num">01 /</span><span class="service-icon" aria-hidden="true">▣</span><h3>Analizamos y desarrollamos</h3><p>Estudiamos tu negocio y tus requisitos para recomendarte el tipo de web y sus funciones. Desarrollamos desde una página de servicios hasta una carta digital, un portal o automatizaciones que simplifiquen tu trabajo.</p><span class="service-bottom">Análisis, asesoramiento y desarrollo</span></article>
+          <article class="service-card glass-light"><span class="service-num">02 /</span><span class="service-icon" aria-hidden="true">◎</span><h3>Organizamos tu contenido</h3><p>Estructuramos tus servicios y las respuestas que buscan tus clientes. Trabajamos el SEO para mejorar tu visibilidad en Google y el GEO para que los buscadores con IA puedan interpretar tu contenido y usarlo en sus respuestas.</p><span class="service-bottom">SEO local y visibilidad en IA</span></article>
+          <article class="service-card glass-light"><span class="service-num">03 /</span><span class="service-icon" aria-hidden="true">✳</span><h3>Damos soporte y mejoramos</h3><p>Después de la entrega, resolvemos incidencias y recogemos tus comentarios. Revisamos cómo se usa el producto y acordamos mejoras por iteraciones: ajustes de contenido, cambios en los recorridos o nuevas funciones según tus prioridades.</p><span class="service-bottom">Soporte y evolución tras la entrega</span></article>
         </div>
       </div>
     </section>
 
     <section class="pricing section-pad" id="precios" aria-labelledby="pricing-title">
-      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">PRECIOS SIN RODEOS</p><h2 id="pricing-title">Una web para empezar. <em>Opciones para crecer.</em></h2></div><p>Elige un punto de partida y cuéntanos qué necesitas. Confirmamos el alcance antes de preparar tu presupuesto.</p></div>
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">PLANES Y PRECIOS</p><h2 id="pricing-title">Qué incluye tu web <em>y cuánto cuesta.</em></h2></div><p>El Plan Inicial cubre una web de presentación y contacto. Los portales, las automatizaciones y otras funciones se presupuestan según tus requisitos.</p></div>
         <div class="pricing-grid">
-          <article class="price-card glass"><p class="price-kicker">PLAN INICIAL</p><h3>Tu negocio, online.</h3><p class="price-number">250 €</p><p>Una página web para presentar tus servicios y facilitar el contacto.</p><ul><li>Creación completa de la web</li><li>Trabajamos con tus imágenes y textos</li><li>Formulario de contacto</li><li>Configuración y puesta en marcha</li><li>Mantenimiento básico durante 3 años</li></ul><a class="button button-outline" href="#contacto">Solicitar información ↗</a></article>
-          <article class="price-card glass featured"><span class="price-badge">PARA NEGOCIOS LOCALES</span><p class="price-kicker">PLAN INICIAL SALAMANCA</p><h3>Crecer desde aquí.</h3><p class="price-number">200 € <span>antes 250 €</span></p><p>El Plan Inicial con descuento especial para negocios de Salamanca.</p><ul><li>Todo lo incluido en el Plan Inicial</li><li>Oferta para negocios locales</li><li>Atención cercana y personalizada</li></ul><a class="button" href="#contacto">Pedir presupuesto ↗</a></article>
-          <article class="price-card glass"><p class="price-kicker">PLAN PREMIUM</p><h3>Un paso más allá.</h3><p class="price-number custom">A medida</p><p>Un proyecto más completo para desarrollar tu presencia digital.</p><ul><li>Todo lo incluido en el Plan Inicial</li><li>Marca e identidad visual</li><li>Campaña de Google Ads</li><li>Integración en Google y buscadores</li><li>Sesión de fotografía</li></ul><a class="button button-outline" href="#contacto">Consultar precio ↗</a></article>
+          <article class="price-card glass featured"><span class="price-badge">OFERTA SALAMANCA</span><p class="price-kicker">PLAN INICIAL SALAMANCA</p><h3>Web para tu negocio local</h3><p class="price-number">200 € <span>antes 250 €</span></p><p>El Plan Inicial con descuento para negocios de Salamanca.</p><ul><li>Creación de la web con tus imágenes y textos</li><li>Diseño adaptado a móviles</li><li>Formulario de contacto</li><li>Configuración y puesta en marcha</li><li>Mantenimiento básico durante 3 años</li></ul><a class="button" href="#contacto">Pedir presupuesto ↗</a></article>
+          <article class="price-card glass"><p class="price-kicker">PLAN INICIAL</p><h3>Web de servicios y contacto</h3><p class="price-number">250 €</p><p>Para presentar tu actividad y recibir consultas desde tu página.</p><ul><li>Creación de la web con tus imágenes y textos</li><li>Diseño adaptado a móviles</li><li>Formulario de contacto</li><li>Configuración y puesta en marcha</li><li>Mantenimiento básico durante 3 años</li></ul><a class="button button-outline" href="#contacto">Pedir presupuesto ↗</a></article>
+          <article class="price-card glass"><p class="price-kicker">PLAN PREMIUM</p><h3>Web, marca y promoción</h3><p class="price-number custom">A medida</p><p>Para trabajar también tu identidad visual, fotografías y publicidad.</p><ul><li>Todo lo incluido en el Plan Inicial</li><li>Marca e identidad visual</li><li>Campaña de Google Ads</li><li>Integración en Google y buscadores</li><li>Sesión de fotografía</li></ul><a class="button button-outline" href="#contacto">Pedir presupuesto ↗</a></article>
         </div>
-        <p class="pricing-note">Los precios publicados incluyen IVA. Los extras, el alcance final y las condiciones de mantenimiento se detallan en el presupuesto.</p>
-        <div class="consult-panel glass"><div><p class="eyebrow">Y SI YA TIENES UNA WEB...</p><h3>Consultoría web y desarrollo freelance</h3><p>También revisamos proyectos existentes, ayudamos a resolver problemas técnicos y colaboramos como desarrollador freelance para mejoras, integraciones y nuevas funcionalidades. El trabajo se presupuesta según el proyecto.</p></div><a class="button button-outline" href="#contacto">Cuéntanos qué necesitas ↗</a></div>
+        <p class="pricing-note">IVA incluido. El presupuesto detalla el alcance, los extras y las condiciones del mantenimiento básico. Las nuevas funciones y las mejoras adicionales se acuerdan por separado.</p>
+        <div class="consult-panel glass"><div><p class="eyebrow">¿YA TIENES WEB?</p><h3>Mejoras, integraciones y desarrollo freelance</h3><p>Cuéntanos qué falla o qué necesitas añadir. Revisamos tu web y te proponemos los cambios técnicos, de contenido o de rendimiento con un presupuesto para ese trabajo.</p></div><a class="button button-outline" href="#contacto">Consultar una mejora ↗</a></div>
       </div>
     </section>
 
-    <section class="process section-pad" id="proceso" aria-labelledby="process-title"><div class="wrap"><p class="eyebrow">SIN COMPLICACIONES</p><h2 id="process-title">Así hacemos que <em>pase.</em></h2><div class="steps"><div><span>01</span><h3>Nos cuentas tu idea</h3><p>Hablamos de tu negocio, tus objetivos y lo que necesitas de tu nueva web.</p></div><div><span>02</span><h3>Diseñamos tu solución</h3><p>Definimos la estructura, el contenido y el diseño que mejor encajan contigo.</p></div><div><span>03</span><h3>Publicamos y mejoramos</h3><p>Ponemos tu página en marcha y te acompañamos con mejoras y soporte.</p></div></div></div></section>
+    <section class="templates section-pad" id="plantillas" aria-labelledby="templates-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow red-text">DEMOS POR SECTOR</p><h2 id="templates-title">Prueba una web <em>como la que necesitas.</em></h2></div><p>Explora la estructura y las funciones de cada ejemplo. Adaptamos el diseño y el contenido a tu negocio; los formularios de estas demos son de prueba.</p></div>
+        <div class="template-grid">
+          <article class="template-card glass-light"><span class="template-category">HOSTELERÍA / 01</span><div class="template-mark" aria-hidden="true">✳</div><h3>Bar y restaurante</h3><p>Carta, fotos, ubicación y solicitud de reserva en una misma página.</p><a href="templates/bar-restaurante/" aria-label="Ver demo de bar y restaurante">Ver demo <span aria-hidden="true">↗</span></a></article>
+          <article class="template-card glass-light"><span class="template-category">SALUD / 02</span><div class="template-mark" aria-hidden="true">✚</div><h3>Clínica</h3><p>Especialidades, equipo e instalaciones, con una opción para solicitar cita.</p><a href="templates/clinica/" aria-label="Ver demo de clínica">Ver demo <span aria-hidden="true">↗</span></a></article>
+          <article class="template-card glass-light"><span class="template-category">BIENESTAR / 03</span><div class="template-mark" aria-hidden="true">↗</div><h3>Entrenador personal</h3><p>Servicios, asesorías y recursos, con contacto para posibles clientes.</p><a href="templates/entrenador-personal/" aria-label="Ver demo de entrenador personal">Ver demo <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </section>
 
-    <section class="faq section-pad" id="preguntas" aria-labelledby="faq-title"><div class="wrap faq-grid"><div><p class="eyebrow red-text">PREGUNTAS FRECUENTES</p><h2 id="faq-title">Antes de empezar, <em>hablemos claro.</em></h2><p>Las dudas más habituales antes de crear una página web para un negocio local.</p></div><div class="faq-list"><details><summary>¿Hacéis páginas web para negocios de toda la provincia de Salamanca?</summary><p>Sí. Trabajamos con negocios de la ciudad y de la provincia de Salamanca, adaptando el contenido y la web a su público y a su zona de servicio.</p></details><details><summary>¿Mi web estará preparada para verse en móviles?</summary><p>Sí. Diseñamos páginas web adaptables a móviles, tabletas y ordenadores, cuidando la lectura, la navegación y la velocidad.</p></details><details><summary>¿Se puede mejorar el SEO de una web que ya tengo?</summary><p>Sí. Podemos revisar la estructura, los contenidos, el rendimiento y la visibilidad local de una web existente para proponer mejoras concretas.</p></details><details><summary>¿Ofrecéis consultoría web o podéis trabajar como desarrollador freelance?</summary><p>Sí. Ofrecemos revisión de proyectos, asesoramiento técnico y colaboración freelance para mejorar webs existentes, desarrollar funcionalidades o resolver problemas concretos. Preparamos presupuesto según las necesidades.</p></details><details><summary>¿Cuánto cuesta una página web?</summary><p>El Plan Inicial cuesta 250 € y existe una oferta para negocios de Salamanca por 200 €. El Plan Premium y los trabajos de consultoría se presupuestan según el alcance. Te confirmaremos las condiciones antes de empezar.</p></details></div></div></section>
+    <section class="faq section-pad" id="preguntas" aria-labelledby="faq-title">
+      <div class="wrap faq-grid"><div><p class="eyebrow red-text">PREGUNTAS FRECUENTES</p><h2 id="faq-title">Alcance, plazos <em>y soporte.</em></h2><p>Qué necesitamos para preparar tu presupuesto y qué ocurre después de publicar.</p></div>
+        <div class="faq-list">
+          <details><summary>¿Qué tengo que enviar para pedir presupuesto?</summary><p>Cuéntanos a qué se dedica tu negocio, qué quieres conseguir y si ya tienes una web. No necesitas un documento técnico: te ayudamos a definir las páginas, el contenido y las funciones.</p></details>
+          <details><summary>¿Qué incluye la web de 200 € para Salamanca?</summary><p>Incluye el Plan Inicial con descuento para negocios de Salamanca: creación de la web con tus textos e imágenes, diseño adaptable a móvil, formulario de contacto, puesta en marcha y mantenimiento básico durante 3 años. El precio incluye IVA; concretamos el alcance y las condiciones de mantenimiento en el presupuesto.</p></details>
+          <details><summary>¿Y si necesito un portal o automatizaciones?</summary><p>Analizamos quién lo va a usar, qué tareas debe resolver y con qué herramientas debe conectarse. Esas funciones se valoran aparte del Plan Inicial, con un presupuesto según los requisitos.</p></details>
+          <details><summary>¿Cuánto tarda en estar lista?</summary><p>El plazo depende de las páginas, las funciones y de cuándo estén disponibles los textos y las imágenes. Lo acordamos al definir el proyecto, antes de empezar.</p></details>
+          <details><summary>¿Qué pasa si necesito cambios después?</summary><p>Seguimos dando soporte después de la entrega. El mantenimiento básico cubre lo detallado en tu presupuesto; las nuevas funciones y mejoras adicionales se acuerdan por separado. Podemos priorizarlas contigo y desarrollarlas por iteraciones.</p></details>
+          <details><summary>¿Podéis mejorar una web que ya tengo?</summary><p>Sí. Revisamos contenido, SEO, rendimiento y problemas técnicos. También hacemos integraciones y colaboraciones de desarrollo freelance. Envíanos la dirección de tu web y qué quieres cambiar para valorar el trabajo.</p></details>
+        </div>
+      </div>
+    </section>
 
-    <section class="contact section-pad" id="contacto" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="eyebrow">EL SIGUIENTE PASO</p><h2 id="contact-title">Tu próxima web empieza <em>con una conversación.</em></h2><p>Cuéntanos qué haces y qué te gustaría conseguir. Te ayudamos a encontrar la solución adecuada para tu negocio en Salamanca.</p><div class="contact-direct"><a href="tel:+34634948589">634 948 589 ↗</a><a href="mailto:contacto@webcharra.es">contacto@webcharra.es ↗</a><a href="https://wa.me/34634948589?text=Hola%2C%20quiero%20hablar%20sobre%20una%20p%C3%A1gina%20web" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp ↗</a></div></div>
+    <section class="contact section-pad" id="contacto" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="eyebrow">PRESUPUESTO SIN COMPROMISO</p><h2 id="contact-title">Cuéntanos qué necesita <em>tu negocio.</em></h2><p>Indica qué servicios ofreces, si ya tienes web y qué te gustaría resolver. Con esa información podremos orientarte y concretar el alcance del presupuesto.</p><div class="contact-direct"><a href="tel:+34634948589">Llamar al 634 948 589 ↗</a><a href="mailto:contacto@webcharra.es">contacto@webcharra.es ↗</a><a href="https://wa.me/34634948589?text=Hola%2C%20quiero%20hablar%20sobre%20una%20p%C3%A1gina%20web" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp ↗</a></div></div>
       <form class="contact-form glass" action="https://formsubmit.co/2add0495aea9d62729fa1fd6f857d148" method="POST">
-        <h3>Cuéntanos tu proyecto</h3><p>Sin compromiso. Te responderemos personalmente.</p>
+        <h3>Pedir presupuesto</h3><p>Te responderemos por email para concretar lo que necesitas.</p>
         <input type="hidden" name="_subject" value="Nueva solicitud desde la home - WebCharra">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="privacyPolicyVersion" value="2026-10-05">
         <div class="honey" aria-hidden="true"><label for="website">Sitio web</label><input id="website" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
         <label for="nombre">Tu nombre</label><input id="nombre" name="Nombre" type="text" autocomplete="name" required placeholder="¿Cómo te llamas?">
         <label for="email">Tu email</label><input id="email" name="Email" type="email" autocomplete="email" required placeholder="tu@email.com">
-        <label for="mensaje">¿En qué podemos ayudarte?</label><textarea id="mensaje" name="Mensaje" rows="4" required placeholder="Háblanos de tu negocio y de la web que necesitas"></textarea>
-        <div class="privacy-summary" id="privacidad-formulario">
-          <p><strong>Responsable:</strong> Saúl Matías Jiménez (WebCharra). <strong>Finalidad:</strong> responder a tu consulta y, si lo solicitas, preparar un presupuesto. <strong>Base jurídica:</strong> tu consentimiento para la consulta y las medidas precontractuales para el presupuesto.</p>
-          <p><strong>Proveedores:</strong> FormSubmit tramita el envío; Gmail y Brevo intervienen en el correo. GitHub Pages y Cloudflare sirven la web. Puede haber tratamiento fuera del EEE; consulta las <a href="politica-privacidad/#transferencias">transferencias y la información pendiente de FormSubmit</a>.</p>
-          <p><strong>Conservación:</strong> consultas sin contratación, hasta 12 meses desde el último contacto, salvo obligaciones legales. <strong>Derechos:</strong> acceso, rectificación, supresión y otros, y retirada del consentimiento, en <a href="mailto:contacto@webcharra.es">contacto@webcharra.es</a>. No te suscribimos a publicidad.</p>
-          <p><a href="politica-privacidad/">Leer la Política de privacidad completa</a>.</p>
-        </div>
+        <label for="mensaje">¿Qué necesitas?</label><textarea id="mensaje" name="Mensaje" rows="4" required placeholder="Mi negocio es... Quiero una web para... / Necesito mejorar..."></textarea>
         <label class="consent"><input type="checkbox" name="privacyPolicy" value="Consiento el tratamiento de mis datos para responder a mi consulta" required><span>He leído la <a href="politica-privacidad/">Política de privacidad</a> y consiento el tratamiento de mis datos para responder a mi consulta.</span></label>
-        <button class="button" type="submit">Enviar mensaje ↗</button>
+        <button class="button" type="submit">Enviar consulta ↗</button>
       </form>
     </div></section>
   </main>
 
-  <footer><div class="wrap footer-top"><div><a class="brand" href="#inicio"><img src="assets/img/icons/icon-red.ico" alt="" width="38" height="38"><span>web<span class="brand-accent">charra.</span></span></a><p>Diseño y desarrollo web en Salamanca.<br>Hecho para negocios con ganas de crecer.</p></div><div class="footer-links"><a href="#servicios">Servicios</a><a href="#plantillas">Plantillas</a><a href="#precios">Precios</a><a href="#trabajos">Proyectos</a><a href="#preguntas">Preguntas frecuentes</a><a href="#contacto">Contacto</a></div></div><div class="wrap footer-bottom"><span>© 2026 WebCharra · Salamanca, España</span><nav class="legal-links" aria-label="Información legal"><a href="aviso-legal/">Aviso legal</a><a href="politica-privacidad/">Política de privacidad</a><a href="politica-cookies/">Política de cookies</a></nav></div></footer>
+  <footer><div class="wrap footer-top"><div><a class="brand" href="#inicio" aria-label="WebCharra, volver al inicio"><img src="assets/img/icons/icon-red.ico" alt="" width="38" height="38"><span>web<span class="brand-accent">charra.</span></span></a><p>Desarrollo web, SEO y soporte.<br>Salamanca y provincia.</p></div><div class="footer-links"><a href="#trabajos">Proyectos</a><a href="#servicios">Servicios</a><a href="#precios">Precios</a><a href="#plantillas">Demos por sector</a><a href="#preguntas">Preguntas frecuentes</a><a href="#contacto">Contacto</a></div></div><div class="wrap footer-bottom"><span>© 2026 WebCharra · Salamanca, España</span><nav class="legal-links" aria-label="Información legal"><a href="aviso-legal/">Aviso legal</a><a href="politica-privacidad/">Política de privacidad</a><a href="politica-cookies/">Política de cookies</a></nav></div></footer>
+  <a class="floating-contact position-fixed d-inline-flex align-items-center justify-content-center gap-2 rounded-pill shadow fw-semibold text-white text-decoration-none" href="https://wa.me/34634948589?text=Hola%2C%20quiero%20pedir%20presupuesto%20para%20mi%20negocio" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp (nueva pestaña)" hidden>
+    <!-- Icono de Bootstrap Icons 1.13.1, licencia MIT: https://github.com/twbs/icons/blob/main/LICENSE -->
+    <svg class="flex-shrink-0" width="26" height="26" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+    <span class="d-none d-sm-inline">Consultar por WhatsApp</span>
+  </a>
 </body>
 </html>
