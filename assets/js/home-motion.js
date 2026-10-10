@@ -5,7 +5,7 @@
   const root = document.documentElement;
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const visual = document.querySelector('.hero-visual');
-  const cards = document.querySelectorAll('.service-card, .work-card, .template-card');
+  const cards = document.querySelectorAll('.service-card, .work-card, .price-card, .template-card');
   cards.forEach(card => card.classList.add('reveal-card'));
   const reveals = document.querySelectorAll('.steps > div, .reveal-card');
 
@@ -32,11 +32,11 @@
     const heroObserver = new IntersectionObserver(entries => {
       for (const entry of entries) entry.target.classList.toggle('is-in-view', entry.isIntersecting);
     });
-    heroObserver.observe(visual);
+    if (visual) heroObserver.observe(visual);
 
-    // Observar el borde inferior, no un porcentaje de la tarjeta: también funciona
-    // cuando una tarjeta es más alta que la pantalla. El margen deja ver el trazo
-    // incluso durante los 24 px de desplazamiento inicial de la animación.
+    // Observar el comienzo, no el final ni un porcentaje de la tarjeta: la entrada
+    // se aprecia al llegar y funciona incluso con tarjetas más altas que la pantalla.
+    // El contenido siempre permanece legible sin JavaScript.
     const revealObserver = new IntersectionObserver(entries => {
       for (const entry of entries) {
         if (!entry.isIntersecting || entry.intersectionRatio < 1) continue;

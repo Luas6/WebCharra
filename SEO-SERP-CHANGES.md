@@ -1,5 +1,13 @@
 # SEO, SERP y GEO — WebCharra
 
+## Home: condiciones desplegables, animaciones y revisión de conectividad
+- Los tres párrafos de condiciones de precios, código/contenidos y WordPress se conservan íntegros dentro de un `details` nativo, cerrado inicialmente, con el título «Más información sobre precios y condiciones». Sin JavaScript adicional; condiciones y enlaces siguen presentes en HTML y schema.
+- Las tarjetas de precios se incorporan al mecanismo de entrada existente. Los disparadores se sitúan al inicio de cada tarjeta/paso, no al final, para que la animación ocurra al llegar al contenido. El observador del hero tolera páginas sin `.hero-visual`.
+- Prueba local Chrome a 390 y 1280 px: 15 tarjetas/pasos observados, revelados y completados; desplegable con tres párrafos; sin desbordamiento ni excepciones JavaScript. Hero con cinco animaciones en escritorio y ninguna fuera de pantalla; en móvil permanece oculto según el diseño existente. Movimiento reducido desactiva las animaciones.
+- Conectividad pública comprobada el 10/10/2026 a las 18:59 UTC: HTTPS del apex y www agota el tiempo de conexión desde esta red antes de recibir HTTP. No se observan códigos 522/524. HTTP muestra una página «Acceso bloqueado» que menciona Vodafone, no el contenido de WebCharra.
+- El origen GitHub Pages responde 200 mediante `curl --resolve webcharra.es:443:185.199.108.153`, conservando hostname/SNI y validación TLS. Home, robots, CSS y JS accesibles en estas comprobaciones HEAD. Esto no confirma la configuración interna de Cloudflare ni la causa definitiva del bloqueo.
+- Pendiente probar desde otro operador y revisar DNS/proxy en Cloudflare y dominio/certificado en GitHub Pages. No se modifican DNS ni SSL; mantener Full (strict), sin recomendar Flexible como solución.
+
 ## Sustitución de la demo de clínica por artesanía
 - Banner ampliado a una escena cinematográfica de tres actos en escritorio: objetos en capas SVG independientes, trayectorias por el viewport, rotación, escala, halos y textos secuenciales. Progreso reversible con el scroll, sin interceptar la rueda ni instalar librerías. Móvil y movimiento reducido conservan la composición estática; sin JavaScript no aparece la escena larga. Probados cinco puntos del recorrido en Chrome, sin desbordamiento ni excepciones JS; carrito comprobado tras el cambio.
 - La home enlaza ahora a `/templates/artesania/`: tienda ficticia de velas y objetos decorativos, con carrito de demostración, sin pagos ni pedidos reales.

@@ -31,6 +31,14 @@
 .price-card li:before{content:"✓";color:#ff8794;font-weight:800}
 .price-card .button{width:100%;margin-top:auto;gap:10px;text-align:center;font-size:.88rem}
 .pricing-note{color:#bfc3cd;font-size:.78rem;line-height:1.6;margin:20px 0 35px}
+.pricing-details{margin:24px 0 35px;border:1px solid #ffffff30;border-radius:16px;background:#ffffff05}
+.pricing-details summary{padding:18px 22px;cursor:pointer;font-size:.9rem;font-weight:600;list-style-position:inside}
+.pricing-details summary:focus-visible{outline:2px solid var(--red);outline-offset:4px;border-radius:16px}
+.pricing-details[open] summary{border-bottom:1px solid #ffffff20}
+.pricing-details-content{padding:20px 22px}
+.pricing-details .pricing-note{font-size:.85rem;margin:0 0 18px}
+.pricing-details .pricing-note:last-child{margin-bottom:0}
+.pricing-details a{text-decoration:underline;text-underline-offset:3px}
 .consult-panel{border-radius:20px;padding:32px 38px;display:flex;align-items:center;justify-content:space-between;gap:35px}
 .consult-panel h3{font-size:clamp(1.6rem,2.5vw,2.3rem)}
 .consult-panel p:last-child{color:#d4d8e1;max-width:690px;font-size:.91rem;margin-bottom:0}
@@ -96,7 +104,7 @@
 }
 
 /* Cada paso se anima una sola vez al aparecer; el texto siempre está disponible. */
-.motion-trigger{position:absolute;left:50%;bottom:1px;width:1px;height:1px;pointer-events:none}
+.motion-trigger{position:absolute;left:50%;top:1px;width:1px;height:1px;pointer-events:none}
 .steps>div{position:relative;--step-delay:0ms}
 .steps>div:nth-child(2){--step-delay:300ms}
 .steps>div:nth-child(3){--step-delay:600ms}
@@ -110,7 +118,7 @@
 @keyframes home-step-line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @keyframes home-step-number{0%{transform:scale(1)}45%{transform:scale(1.18)}100%{transform:scale(1)}}
 
-/* Servicios, proyectos y plantillas: entrada escalonada con el mismo trazo rojo. */
+/* Servicios, proyectos, precios y plantillas: entrada escalonada con el mismo trazo rojo. */
 .reveal-card{position:relative;--card-delay:0ms}
 .reveal-card:nth-child(2){--card-delay:180ms}
 .reveal-card:nth-child(3){--card-delay:360ms}
