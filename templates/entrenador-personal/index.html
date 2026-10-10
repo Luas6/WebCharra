@@ -3,72 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FitPro | Entrenador Personal en Salamanca</title>
+    <title>FitPro · Demo de Entrenador Personal en Salamanca</title>
 
     <!-- SEO -->
     <meta name="description"
-        content="FitPro en Salamanca: entrenamiento personalizado, planes de nutrición y seguimiento constante. Consigue tus objetivos con un entrenador profesional. Descarga gratis nuestra guía de inicio.">
+        content="Demo FitPro: plantilla de entrenador personal con diseño minimalista, colores pastel y animaciones suaves. Formularios y contenidos de ejemplo.">
     <meta name="keywords"
         content="entrenador personal Salamanca, fitness, entrenamiento personal, gimnasio, nutrición deportiva, ponerse en forma">
-    <link rel="canonical" href="https://www.fitpro-salamanca.es/">
-    <meta name="author" content="FitPro">
+    <link rel="canonical" href="https://webcharra.es/templates/entrenador-personal/">
+    <meta name="author" content="WebCharra">
+    <meta name="theme-color" content="#F7F6F0">
+    <link rel="icon" href="../../assets/img/icons/icon-red.ico" type="image/x-icon">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="FitPro | Entrenador Personal en Salamanca">
+    <meta property="og:title" content="FitPro · Demo de Entrenador Personal en Salamanca">
     <meta property="og:description"
-        content="Entrenamiento personalizado, nutrición y seguimiento. Descarga gratis nuestra guía de inicio y empieza a transformar tu cuerpo.">
+        content="Diseño minimalista para entrenamiento y bienestar. Una demostración con tonos pastel, ilustración propia y movimiento suave.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.fitpro-salamanca.es/">
-    <meta property="og:image" content="https://www.fitpro-salamanca.es/img/og-image.jpg">
+    <meta property="og:url" content="https://webcharra.es/templates/entrenador-personal/">
+    <meta property="og:image" content="https://webcharra.es/assets/img/salamanca.webp">
     <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="WebCharra · Demos">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FitPro · Demo de Entrenador Personal">
+    <meta name="twitter:description" content="Plantilla minimalista con tonos pastel y animaciones suaves. Contenidos y formularios de demostración.">
+    <meta name="twitter:image" content="https://webcharra.es/assets/img/salamanca.webp">
 
-    <!-- Schema.org: ExerciseGym -->
+    <!-- Schema.org: demostración de WebCharra, no un negocio real. -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "ExerciseGym",
-        "name": "FitPro",
-        "image": "https://www.fitpro-salamanca.es/img/og-image.jpg",
-        "telephone": "+34 923 555 777",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Calle del Deporte 12",
-            "addressLocality": "Salamanca",
-            "postalCode": "37008",
-            "addressCountry": "ES"
-        },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "07:00",
-                "closes": "22:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "09:00",
-                "closes": "14:00"
-            }
-        ],
-        "priceRange": "€€"
+      "@context": "https://schema.org",
+      "@graph": [
+        {"@type":"ProfessionalService","@id":"https://webcharra.es/#negocio","name":"WebCharra","url":"https://webcharra.es/","telephone":"+34634948589","email":"contacto@webcharra.es","address":{"@type":"PostalAddress","streetAddress":"C/ Zamora, 28","postalCode":"37191","addressLocality":"Carbajosa de la Sagrada","addressRegion":"Salamanca","addressCountry":"ES"}},
+        {"@type":"WebSite","@id":"https://webcharra.es/#website","name":"WebCharra","url":"https://webcharra.es/","publisher":{"@id":"https://webcharra.es/#negocio"}},
+        {"@type":"WebPage","@id":"https://webcharra.es/templates/entrenador-personal/#webpage","url":"https://webcharra.es/templates/entrenador-personal/","name":"Demo entrenador personal · WebCharra","description":"Demostración de una plantilla web de WebCharra para entrenadores personales. Los contenidos son ficticios; no se tramitan asesorías, compras ni suscripciones ni se envían guías.","inLanguage":"es","isPartOf":{"@id":"https://webcharra.es/#website"},"publisher":{"@id":"https://webcharra.es/#negocio"},"breadcrumb":{"@id":"https://webcharra.es/templates/entrenador-personal/#breadcrumb"}},
+        {"@type":"BreadcrumbList","@id":"https://webcharra.es/templates/entrenador-personal/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://webcharra.es/"},{"@type":"ListItem","position":2,"name":"Demo entrenador personal","item":"https://webcharra.es/templates/entrenador-personal/"}]}
+      ]
     }
     </script>
 
-    <link rel="stylesheet" href="styles.css">
+
     <link rel="stylesheet" href="../../assets/css/legal.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
+    <a class="skip-link" href="#inicio">Saltar al contenido</a>
 
     <!-- Navegación -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-icon">💪</span>
-                FitPro
+            <a href="#inicio" class="nav-logo" aria-label="FitPro, inicio">
+                <span class="logo-icon" aria-hidden="true">f.</span>
+                fitpro<span class="logo-dot" aria-hidden="true">®</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
@@ -77,42 +68,63 @@
                 <li><a href="#asesorias">Asesorías</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <a href="#asesorias" class="btn btn-primary nav-cta">Empieza ahora</a>
+            <a href="#asesorias" class="btn btn-primary nav-cta">Hablemos <span aria-hidden="true">↗</span></a>
         </div>
     </nav>
 
-    <!-- Hero -->
+    <main>
+    <div class="demo-bar container">
+        <nav class="legal-links" aria-label="Ruta de navegación"><a href="../../">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Demo entrenador personal</span></nav>
+        <span>Plantilla de demostración · FitPro es una marca ficticia</span>
+    </div>
+    <!-- Hero: ilustración vectorial propia, sin imágenes externas. -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <span class="hero-badge">🏆 Entrenador certificado</span>
-            <h1>Transforma tu cuerpo.<br>Transforma tu vida.</h1>
-            <p class="hero-tagline">Entrenamiento personalizado, nutrición y seguimiento constante para que consigas
-                tus objetivos de forma real y sostenible.</p>
+            <span class="hero-badge"><span aria-hidden="true"></span> Movimiento. Equilibrio. Tú.</span>
+            <h1>Más movimiento.<br><em>Más tú.</em></h1>
+            <p class="hero-tagline">Entrenamiento que se adapta a tu vida, no al revés. Un espacio para ganar fuerza, encontrar tu ritmo y disfrutar del proceso.</p>
             <div class="hero-actions">
-                <a href="#asesorias" class="btn btn-primary btn-lg">Solicitar asesoría gratuita</a>
-                <a href="#guias" class="btn btn-outline btn-lg">Descargar guía gratuita</a>
+                <a href="#asesorias" class="btn btn-primary btn-lg">Encuentra tu ritmo <span aria-hidden="true">↗</span></a>
+                <a href="#guias" class="btn btn-outline btn-lg">Explora las guías <span aria-hidden="true">↓</span></a>
             </div>
+            <p class="hero-note">A tu nivel. A tu manera. Paso a paso.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+            <div class="art-canvas">
+                <span class="art-label">THE EVERYDAY MOVEMENT CLUB</span>
+                <svg class="movement-drawing" viewBox="0 0 480 510" fill="none">
+                    <circle cx="245" cy="232" r="160" class="art-disc"/>
+                    <path d="M42 385C92 293 389 293 438 385C488 477 1 477 42 385Z" class="art-orbit"/>
+                    <path d="M242 136C263 123 286 136 282 157C279 174 256 185 243 172C230 159 229 146 242 136Z" class="figure-line"/>
+                    <path d="M252 185C228 204 210 229 199 260L243 287L284 247L273 204M238 200L183 183L149 137M183 183L195 137M272 206L327 181L355 141M327 181L316 141M243 287L215 335L165 378M284 247L293 310L334 363M165 378L134 385M334 363L362 373" class="figure-line"/>
+                    <path d="M92 94L104 74M93 74L104 94M378 284L390 264M378 264L390 284" class="art-spark"/>
+                </svg>
+                <div class="art-caption"><span>01 / VUELVE A TI</span><span>respira &amp; muévete</span></div>
+            </div>
+            <div class="art-pill"><span aria-hidden="true">✳</span> Pequeños pasos.<br>Grandes sensaciones.</div>
         </div>
     </section>
+    <div class="movement-strip container" aria-label="Nuestra filosofía"><span>Fuerza sin prisas</span><span aria-hidden="true">✳</span><span>Hábitos que acompañan</span><span aria-hidden="true">✳</span><span>Movimiento consciente</span></div>
 
     <!-- Servicios -->
     <section id="servicios" class="section">
         <div class="container">
-            <h2 class="section-title">Servicios</h2>
-            <p class="section-subtitle">Todo lo que necesitas para alcanzar tus metas</p>
+            <span class="section-kicker">01 / TU FORMA DE MOVERTE</span>
+            <h2 class="section-title">Un plan que <em>va contigo.</em></h2>
+            <p class="section-subtitle">Distintas formas de cuidarte. Un mismo punto de partida: tú.</p>
 
             <div class="servicios-grid">
                 <!-- Servicio 1 -->
                 <div class="servicio-card">
-                    <div class="servicio-icon">🏋️</div>
+                    <div class="servicio-icon" aria-hidden="true">01 /</div>
                     <h3>Entrenamiento Personal</h3>
                     <p>Sesiones 100% personalizadas adaptadas a tu nivel, objetivos y disponibilidad. Técnica correcta
-                        y progresión garantizada.</p>
+                        y progresión adaptada.</p>
                 </div>
 
                 <!-- Servicio 2 -->
                 <div class="servicio-card">
-                    <div class="servicio-icon">🥗</div>
+                    <div class="servicio-icon" aria-hidden="true">02 /</div>
                     <h3>Plan de Nutrición</h3>
                     <p>Dietas flexibles y realistas diseñadas para tu estilo de vida. Sin prohibiciones absurdas, con
                         resultados reales.</p>
@@ -120,7 +132,7 @@
 
                 <!-- Servicio 3 -->
                 <div class="servicio-card">
-                    <div class="servicio-icon">📊</div>
+                    <div class="servicio-icon" aria-hidden="true">03 /</div>
                     <h3>Seguimiento Semanal</h3>
                     <p>Mediciones, fotos y análisis de progreso cada semana. Ajustamos tu plan según tus resultados
                         para maximizar el progreso.</p>
@@ -128,7 +140,7 @@
 
                 <!-- Servicio 4 -->
                 <div class="servicio-card">
-                    <div class="servicio-icon">🏠</div>
+                    <div class="servicio-icon" aria-hidden="true">04 /</div>
                     <h3>Entrenamiento Online</h3>
                     <p>Entrena desde casa o donde quieras con planes en video, rutinas guiadas y soporte por
                         WhatsApp.</p>
@@ -136,7 +148,7 @@
 
                 <!-- Servicio 5 -->
                 <div class="servicio-card">
-                    <div class="servicio-icon">🏃</div>
+                    <div class="servicio-icon" aria-hidden="true">05 /</div>
                     <h3>Preparación Física</h3>
                     <p>Entrenamiento específico para deportes: running, ciclismo, deportes de equipo y más. Mejora tu
                         rendimiento.</p>
@@ -144,7 +156,7 @@
 
                 <!-- Servicio 6 -->
                 <div class="servicio-card">
-                    <div class="servicio-icon">💆</div>
+                    <div class="servicio-icon" aria-hidden="true">06 /</div>
                     <h3>Recuperación y Movilidad</h3>
                     <p>Trabajo de movilidad, estiramientos y recuperación muscular para prevenir lesiones y mejorar tu
                         calidad de vida.</p>
@@ -156,14 +168,15 @@
     <!-- Guías -->
     <section id="guias" class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Recursos gratuitos</h2>
-            <p class="section-subtitle">Descarga nuestras guías y empieza a entrenar como un profesional</p>
+            <span class="section-kicker">02 / UN POCO DE INSPIRACIÓN</span>
+            <h2 class="section-title">Tu próximo <em>pequeño paso.</em></h2>
+            <p class="section-subtitle">Guías para entender el entrenamiento y construir tus propios hábitos.</p>
 
             <div class="guias-grid">
                 <!-- Guía Gratuita -->
                 <div class="guia-card guia-gratuita">
                     <div class="guia-badge">GRATIS</div>
-                    <div class="guia-icon">📖</div>
+                    <div class="guia-icon" aria-hidden="true">a.</div>
                     <h3>Guía de Inicio al Fitness</h3>
                     <p>Todo lo que necesitas saber para empezar a entrenar desde cero: ejercicios básicos, errores
                         comunes, rutina de 4 semanas y consejos de alimentación.</p>
@@ -186,7 +199,7 @@
                 <!-- Guía Privada -->
                 <div class="guia-card guia-privada">
                     <div class="guia-badge guia-badge-private">PRIVADA</div>
-                    <div class="guia-icon">🔒</div>
+                    <div class="guia-icon" aria-hidden="true">b.</div>
                     <h3>Guía Avanzada de Hipertrofia</h3>
                     <p>La guía definitiva para ganar masa muscular: periodización, técnicas de intensidad,
                         suplementación y planes de alimentación detallados.</p>
@@ -212,7 +225,8 @@
     <!-- Asesorías -->
     <section id="asesorias" class="section">
         <div class="container">
-            <h2 class="section-title">Solicita tu asesoría gratuita</h2>
+            <span class="section-kicker">03 / EMPEZAMOS CON UNA CONVERSACIÓN</span>
+            <h2 class="section-title">Cuéntame <em>tu punto de partida.</em></h2>
             <p class="section-subtitle">Una sesión de 30 minutos para conocer tus objetivos y diseñar tu plan
                 personalizado</p>
 
@@ -311,8 +325,9 @@
     <!-- Clientes / Testimonios -->
     <section id="clientes" class="section">
         <div class="container">
-            <h2 class="section-title">Lo que dicen mis clientes</h2>
-            <p class="section-subtitle">Resultados reales de personas reales</p>
+            <span class="section-kicker">04 / UN ESPACIO PARA COMPARTIR</span>
+            <h2 class="section-title">Cada proceso, <em>una historia.</em></h2>
+            <p class="section-subtitle">Ejemplos ficticios de testimonios para mostrar el diseño. No representan clientes ni resultados acreditados.</p>
 
             <div class="clientes-grid">
                 <!-- Testimonio 1 -->
@@ -417,7 +432,9 @@
     <!-- Contacto -->
     <section id="contacto" class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
+            <span class="section-kicker">05 / NOS VEMOS POR AQUÍ</span>
+            <h2 class="section-title">Hagamos sitio <em>para ti.</em></h2>
+            <p class="section-subtitle">Los datos de contacto y la ubicación siguientes son ficticios y forman parte de esta demostración.</p>
 
             <div class="contacto-grid">
                 <div class="contacto-info">
@@ -440,13 +457,16 @@
 
                 <div class="contacto-mapa">
                     <div class="placeholder-img placeholder-grande">
-                        <span>Mapa de ubicación</span>
+                            <span class="map-pin" aria-hidden="true">◎</span>
+                            <span>Tu espacio de entrenamiento</span>
+                            <small>Ubicación de ejemplo · Salamanca</small>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -454,43 +474,6 @@
             <nav class="legal-links" aria-label="Información legal de WebCharra"><a href="../../">WebCharra</a><a href="../../aviso-legal/">Aviso legal</a><a href="../../politica-privacidad/">Política de privacidad</a><a href="../../politica-cookies/">Política de cookies</a></nav>
         </div>
     </footer>
-
-    <!-- Scripts para formularios y botones dummy -->
-    <script>
-        // Formulario de guía gratuita - dummy
-        document.querySelector('.guia-gratuita .guia-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('¡Gracias por tu interés! Este es un formulario de prueba. www.webcharra.es');
-        });
-
-        // Formulario de guía privada - dummy
-        document.querySelector('.guia-privada .guia-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('¡Gracias por tu interés! Este es un formulario de prueba. www.webcharra.es');
-        });
-
-        // Formulario de asesoría - dummy
-        document.querySelector('.asesoria-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('¡Gracias por tu interés! Este es un formulario de prueba. www.webcharra.es');
-        });
-
-        // Botones de descarga de guías - dummy
-        document.querySelectorAll('.guia-card .btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                alert('¡Gracias por tu interés! Este es un botón de prueba. www.webcharra.es');
-            });
-        });
-
-        // Todos los botones de la plantilla son "Dummies"
-        document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                alert('¡Gracias por tu interés! Este es un botón de prueba. www.webcharra.es');
-            });
-        });
-    </script>
 
 </body>
 

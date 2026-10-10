@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://webcharra.es/</loc>
-        <lastmod>2026-10-03</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://webcharra.es/templates/bar-restaurante/</loc>
-        <lastmod>2026-10-03</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://webcharra.es/templates/clinica/</loc>
-        <lastmod>2026-10-03</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://webcharra.es/templates/entrenador-personal/</loc>
-        <lastmod>2026-10-03</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <url><loc>https://webcharra.es/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://webcharra.es/disenador-web-freelance-salamanca/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://webcharra.es/paginas-web-autonomos-salamanca/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://webcharra.es/paginas-web-pequenas-empresas-salamanca/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://webcharra.es/mantenimiento-web-salamanca/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://webcharra.es/blog/cuanto-cuesta-pagina-web-salamanca/</loc><lastmod>2026-10-10</lastmod></url>
 </urlset>

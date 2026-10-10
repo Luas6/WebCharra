@@ -22,7 +22,15 @@
   <noscript><style>*,*::before,*::after{animation:none!important}.flow-card,.reference,.filters,#save-demo{display:none}</style></noscript>
   <script src="lab.js" defer></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"CollectionPage","name":"UI Lab · Componentes WebCharra","url":"https://webcharra.es/componentes/","inLanguage":"es","description":"Galería de referencia de componentes UX/UI interactivos y animaciones.","publisher":{"@type":"Organization","name":"WebCharra","url":"https://webcharra.es/"}}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {"@type":"ProfessionalService","@id":"https://webcharra.es/#negocio","name":"WebCharra","url":"https://webcharra.es/","telephone":"+34634948589","email":"contacto@webcharra.es","address":{"@type":"PostalAddress","streetAddress":"C/ Zamora, 28","postalCode":"37191","addressLocality":"Carbajosa de la Sagrada","addressRegion":"Salamanca","addressCountry":"ES"}},
+      {"@type":"WebSite","@id":"https://webcharra.es/#website","name":"WebCharra","url":"https://webcharra.es/","publisher":{"@id":"https://webcharra.es/#negocio"}},
+      {"@type":"CollectionPage","@id":"https://webcharra.es/componentes/#webpage","url":"https://webcharra.es/componentes/","name":"UI Lab · Componentes WebCharra","description":"Laboratorio de componentes WebCharra: glassmorphism, animaciones e interacciones UX/UI. Prueba los ejemplos y consulta su código de referencia.","inLanguage":"es","isPartOf":{"@id":"https://webcharra.es/#website"},"publisher":{"@id":"https://webcharra.es/#negocio"},"breadcrumb":{"@id":"https://webcharra.es/componentes/#breadcrumb"}},
+      {"@type":"BreadcrumbList","@id":"https://webcharra.es/componentes/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://webcharra.es/"},{"@type":"ListItem","position":2,"name":"Laboratorio","item":"https://webcharra.es/componentes/"}]}
+    ]
+  }
   </script>
 </head>
 <body>
@@ -32,6 +40,7 @@
     <div class="header-actions"><a href="#coleccion">Explorar ↘</a><button class="quiet motion-control" type="button" aria-pressed="false" disabled>Pausar efectos</button></div>
   </header>
   <main id="contenido">
+    <nav class="wrap legal-links" aria-label="Ruta de navegación"><a href="../">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Laboratorio</span></nav>
     <section class="wrap hero" aria-labelledby="hero-title">
       <div class="hero-copy"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> EXPERIMENTOS DIGITALES / VOL. 01</p><h1 id="hero-title">No solo se ve.<br><span>Se siente.</span></h1><p class="lead">Un pequeño laboratorio de grandes interacciones.<br>Texturas, movimiento y detalles que convierten una interfaz en una experiencia.</p><a class="primary" href="#coleccion">Entrar al laboratorio ↘</a><p class="hero-note">HTML + CSS + JS · Sin dependencias · Hecho para experimentar</p></div>
       <div class="sculpture" aria-hidden="true"><div class="aura"></div><div class="ring ring-one"></div><div class="ring ring-two"></div><div class="ring ring-three"></div><div class="core"><span>W<span class="red">.</span></span></div><div class="floating-label label-top">MOTION IS A LANGUAGE</div><div class="floating-label label-bottom"><span class="status-dot"></span> Diseñado para sentir</div><span class="axis axis-x"></span><span class="axis axis-y"></span><span class="coordinate">40.96° N / 5.66° W</span></div>

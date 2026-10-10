@@ -1,40 +1,35 @@
 # WebCharra
 
-> WebCharra es una empresa de desarrollo web y SEO con sede en Salamanca, España. Creamos sitios web modernos, rápidos y optimizados para negocios locales.
+> Proyecto de Saúl Matías Jiménez: diseño y desarrollo web, SEO técnico y local y soporte para autónomos y pequeños negocios de Salamanca y provincia. No se garantizan posiciones ni menciones en respuestas de IA.
 
-## Sobre nosotros
+## Información comercial
+- Web: https://webcharra.es/
+- Email: contacto@webcharra.es
+- Teléfono: +34 634 948 589
+- WhatsApp: https://wa.me/34634948589
+- Identificación del titular: https://webcharra.es/aviso-legal/
+- Plan Inicial Salamanca: 200 € con IVA. Plan Inicial: 250 € con IVA.
+- El dominio no está incluido. El alojamiento y sus costes se concretan en el presupuesto.
+- Un año de mantenimiento: actualizaciones, backups, seguridad y resolución de incidencias por nuestra parte; dos iteraciones de cambios.
+- Renovación y funciones adicionales: presupuesto específico.
+- No se entrega el código fuente. Los cambios de contenido se solicitan a WebCharra; un editor solo se implementa si se acuerda como función.
+- Se trabaja con WordPress, pero no es la especialidad ni la recomendación por defecto.
+- Plazos según alcance y disponibilidad de materiales; no existe un plazo fijo general.
 
-- **Nombre:** WebCharra
-- **Ubicación:** Salamanca, España
-- **Especialidad:** Desarrollo web, SEO, diseño de plantillas web
-- **Web:** https://webcharra.es
+## Servicios y orientación
+- [Diseño web en Salamanca](https://webcharra.es/)
+- [Diseñador web freelance](https://webcharra.es/disenador-web-freelance-salamanca/)
+- [Webs para autónomos](https://webcharra.es/paginas-web-autonomos-salamanca/)
+- [Webs para pequeñas empresas](https://webcharra.es/paginas-web-pequenas-empresas-salamanca/)
+- [Mantenimiento web](https://webcharra.es/mantenimiento-web-salamanca/)
+- [Precios y costes de una web](https://webcharra.es/blog/cuanto-cuesta-pagina-web-salamanca/)
+- [Contacto y presupuesto](https://webcharra.es/#contacto)
 
-## Servicios
+## Proyectos publicados
+- Capablanca Salamanca: https://capablancasalamanca.es/ — web para compartir información de la asociación.
+- Divinas Teatro: https://divinasteatro.es/ — presentación de compañía, obras y actualización de programación.
+- Relief Carreleur: https://www.reliefcarreleur.fr/ — identidad y presencia local de un profesional de reformas.
+- Contexto de los proyectos: https://webcharra.es/#trabajos
 
-- Diseño y desarrollo de páginas web
-- Optimización SEO
-- Plantillas web personalizadas para diferentes sectores
-- Consultoría digital
-
-## Plantillas disponibles
-
-- **Bar / Restaurante:** Plantilla con estilo creativo y moderno. Incluye carta de platos, galería de fotos, ubicación y formulario de reserva.
-  - URL: https://webcharra.es/templates/bar-restaurante/
-
-- **Clínica:** Plantilla con estilo glassmorphism, elegante y profesional. Incluye servicios, equipo médico, instalaciones y cita previa.
-  - URL: https://webcharra.es/templates/clinica/
-
-- **Entrenador Personal:** Plantilla con estilo moderno y oscuro. Incluye servicios, guías descargables, asesorías y formulario de contacto.
-  - URL: https://webcharra.es/templates/entrenador-personal/
-
-## Contacto
-
-- **Email:** contacto@webcharra.es
-- **Teléfono:** +34 634 948 589
-- **WhatsApp:** https://wa.me/34634948589
-
-## Notas
-
-- Todas las plantillas incluyen SEO optimizado y son responsive.
-- Los formularios de las plantillas son de prueba (dummies) y no envían datos reales.
-- Las plantillas se pueden personalizar según las necesidades del cliente.
+## Demostraciones
+Las páginas de restaurante, tienda artesanal y entrenador en /templates/ son ejemplos, no clientes ni negocios reales acreditados. Sus formularios y carritos son de prueba. La tienda artesanal está en https://webcharra.es/templates/artesania/ y sustituye a la antigua demo de clínica. Su marca, catálogo y precios son ficticios; no se realizan cobros ni pedidos. No deben interpretarse los nombres, direcciones o reseñas de las demos como datos de WebCharra.

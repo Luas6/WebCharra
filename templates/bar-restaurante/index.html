@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>La Terraza | Restaurante y Bar en Salamanca</title>
 
@@ -12,52 +13,31 @@
         content="La Terraza es un restaurante y bar en Salamanca con cocina mediterránea creativa, cócteles artesanales y un ambiente único. Reserva tu mesa.">
     <meta name="keywords"
         content="restaurante Salamanca, bar Salamanca, cocina mediterránea, cócteles, reservas restaurante, tapeo Salamanca">
-    <link rel="canonical" href="https://www.laterraza-salamanca.es/">
+    <link rel="canonical" href="https://webcharra.es/templates/bar-restaurante/">
     <meta name="author" content="La Terraza">
 
     <!-- Open Graph -->
     <meta property="og:title" content="La Terraza | Restaurante y Bar en Salamanca">
     <meta property="og:description"
         content="Cocina mediterránea creativa y cócteles artesanales en el corazón de Salamanca. Reserva tu mesa.">
-    <meta property="og:type" content="restaurant">
-    <meta property="og:url" content="https://www.laterraza-salamanca.es/">
-    <meta property="og:image" content="https://www.laterraza-salamanca.es/img/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://webcharra.es/templates/bar-restaurante/">
+    <meta property="og:image" content="https://webcharra.es/assets/img/salamanca.webp">
     <meta property="og:locale" content="es_ES">
 
-    <!-- Schema.org: Restaurant -->
+    <!-- Schema.org: demostración de WebCharra, no un negocio real. -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "La Terraza",
-        "image": "https://www.laterraza-salamanca.es/img/og-image.jpg",
-        "servesCuisine": ["Mediterránea", "Española", "Creativa"],
-        "priceRange": "€€",
-        "telephone": "+34 923 000 000",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Calle Mayor 15",
-            "addressLocality": "Salamanca",
-            "postalCode": "37001",
-            "addressCountry": "ES"
-        },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Sunday"],
-                "opens": "13:00",
-                "closes": "23:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Friday", "Saturday"],
-                "opens": "13:00",
-                "closes": "01:00"
-            }
-        ],
-        "acceptsReservations": "True"
+      "@context": "https://schema.org",
+      "@graph": [
+        {"@type":"ProfessionalService","@id":"https://webcharra.es/#negocio","name":"WebCharra","url":"https://webcharra.es/","telephone":"+34634948589","email":"contacto@webcharra.es","address":{"@type":"PostalAddress","streetAddress":"C/ Zamora, 28","postalCode":"37191","addressLocality":"Carbajosa de la Sagrada","addressRegion":"Salamanca","addressCountry":"ES"}},
+        {"@type":"WebSite","@id":"https://webcharra.es/#website","name":"WebCharra","url":"https://webcharra.es/","publisher":{"@id":"https://webcharra.es/#negocio"}},
+        {"@type":"WebPage","@id":"https://webcharra.es/templates/bar-restaurante/#webpage","url":"https://webcharra.es/templates/bar-restaurante/","name":"Demo bar-restaurante · WebCharra","description":"Demostración de una plantilla web de WebCharra para bares y restaurantes. Los contenidos son ficticios y el formulario no tramita reservas.","inLanguage":"es","isPartOf":{"@id":"https://webcharra.es/#website"},"publisher":{"@id":"https://webcharra.es/#negocio"},"breadcrumb":{"@id":"https://webcharra.es/templates/bar-restaurante/#breadcrumb"}},
+        {"@type":"BreadcrumbList","@id":"https://webcharra.es/templates/bar-restaurante/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://webcharra.es/"},{"@type":"ListItem","position":2,"name":"Demo bar-restaurante","item":"https://webcharra.es/templates/bar-restaurante/"}]}
+      ]
     }
     </script>
+
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../../assets/css/legal.css">
@@ -382,6 +362,7 @@
         <div class="container">
             <h2 class="section-title">Reserva tu mesa</h2>
             <p class="demo-notice"><strong>Demostración de WebCharra.</strong> Este formulario no tramita reservas. Utiliza únicamente datos ficticios para probarlo.</p>
+            <nav class="legal-links" aria-label="Ruta de navegación"><a href="../../">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Demo bar-restaurante</span></nav>
 
             <form class="reserva-form" action="#" method="POST">
                 <div class="form-row">

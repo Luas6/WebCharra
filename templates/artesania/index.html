@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#f4efe7">
+  <title>Bruma Atelier · Demo de tienda artesanal | WebCharra</title>
+  <meta name="description" content="Una demo de tienda artesanal creada por WebCharra. Bruma Atelier, los productos y los precios son ficticios. Sin pedidos ni pagos reales.">
+  <link rel="canonical" href="https://webcharra.es/templates/artesania/">
+  <link rel="icon" href="../../assets/img/icons/icon-red.ico">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Bruma Atelier · Demo de tienda artesanal">
+  <meta property="og:description" content="Diseño de tienda artesanal por WebCharra. Marca, catálogo y precios ficticios; sin pedidos ni cobros.">
+  <meta property="og:url" content="https://webcharra.es/templates/artesania/">
+  <meta property="og:image" content="https://webcharra.es/assets/img/salamanca.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bruma Atelier · Demo de tienda artesanal">
+  <meta name="twitter:description" content="Una tienda ficticia para explorar un diseño real. Sin pedidos ni pagos.">
+  <meta name="twitter:image" content="https://webcharra.es/assets/img/salamanca.webp">
+  <link rel="stylesheet" href="../../assets/css/legal.css">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"ProfessionalService","@id":"https://webcharra.es/#negocio","name":"WebCharra","url":"https://webcharra.es/","telephone":"+34634948589","email":"contacto@webcharra.es","address":{"@type":"PostalAddress","streetAddress":"C/ Zamora, 28","postalCode":"37191","addressLocality":"Carbajosa de la Sagrada","addressRegion":"Salamanca","addressCountry":"ES"}},
+    {"@type":"WebSite","@id":"https://webcharra.es/#website","name":"WebCharra","url":"https://webcharra.es/","publisher":{"@id":"https://webcharra.es/#negocio"}},
+    {"@type":"WebPage","@id":"https://webcharra.es/templates/artesania/#webpage","url":"https://webcharra.es/templates/artesania/","name":"Demo tienda artesanal · WebCharra","description":"Demostración de diseño web para una tienda artesanal. Bruma Atelier, su catálogo y sus precios son ficticios. No se realizan pedidos ni pagos.","inLanguage":"es","isPartOf":{"@id":"https://webcharra.es/#website"},"publisher":{"@id":"https://webcharra.es/#negocio"},"breadcrumb":{"@id":"https://webcharra.es/templates/artesania/#breadcrumb"}},
+    {"@type":"BreadcrumbList","@id":"https://webcharra.es/templates/artesania/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://webcharra.es/"},{"@type":"ListItem","position":2,"name":"Demo tienda artesanal","item":"https://webcharra.es/templates/artesania/"}]}
+  ]}
+  </script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="demo-bar"><span class="status-dot" aria-hidden="true"></span><strong>Una tienda imaginada.</strong> Demo de WebCharra · Marca, productos y precios ficticios. Sin pedidos ni pagos.</div>
+  <div class="shell">
+    <nav class="breadcrumb" aria-label="Ruta de navegación"><a href="../../">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Demo tienda artesanal</span></nav>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Bruma Atelier, inicio"><span class="brand-mark" aria-hidden="true">b.</span><span>bruma<span class="brand-sub">ATELIER IMAGINARIO</span></span></a>
+      <nav class="main-nav" aria-label="Navegación de la demo"><a href="#catalogo">Catálogo</a><a href="#proceso">El proceso</a><a href="#preguntas">Preguntas</a></nav>
+      <button class="cart-toggle" data-cart-open disabled aria-haspopup="dialog">Bolsa <span class="cart-count" aria-live="polite" aria-atomic="true">0</span></button>
+    </header>
+  </div>
+  <!-- Ilustraciones originales: sin imágenes, fuentes ni recursos externos. -->
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="0" height="0"><defs>
+    <linearGradient id="wax" x1="0" x2="1"><stop stop-color="#d5c8b4"/><stop offset=".45" stop-color="#fcf2dd"/><stop offset="1" stop-color="#e5d6bd"/></linearGradient>
+    <linearGradient id="lilac" x1="0" x2="1"><stop stop-color="#aa9bc2"/><stop offset=".45" stop-color="#e3d9ef"/><stop offset="1" stop-color="#c1afd2"/></linearGradient>
+    <linearGradient id="jade" x1="0" x2="1"><stop stop-color="#578b7e"/><stop offset=".45" stop-color="#a7c8b7"/><stop offset="1" stop-color="#719e8d"/></linearGradient>
+    <linearGradient id="peach" x1="0" x2="1"><stop stop-color="#c88970"/><stop offset=".45" stop-color="#f0c3a5"/><stop offset="1" stop-color="#dca38b"/></linearGradient>
+    <symbol id="art-aube" viewBox="0 0 300 300">
+      <ellipse cx="150" cy="254" rx="83" ry="12" fill="#514837" opacity=".12"/>
+      <rect x="85" y="112" width="130" height="135" rx="22" fill="url(#wax)"/><ellipse cx="150" cy="115" rx="65" ry="17" fill="#eee0c5"/><ellipse cx="150" cy="114" rx="54" ry="11" fill="#faf1db"/>
+      <path d="M150 113v-18" stroke="#4f463d" stroke-width="3" stroke-linecap="round"/><path d="M150 96c-21-16-5-28 0-43 8 15 20 34 0 43" fill="#edb878"/>
+      <rect x="106" y="161" width="88" height="48" rx="2" fill="#fffaf0" opacity=".88"/><text x="150" y="181" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#51483e">bruma</text><text x="150" y="195" text-anchor="middle" font-family="sans-serif" font-size="6" letter-spacing="2" fill="#51483e">A U B E</text>
+    </symbol>
+    <symbol id="art-pli" viewBox="0 0 300 300">
+      <ellipse cx="150" cy="252" rx="72" ry="11" fill="#514837" opacity=".12"/><rect x="98" y="103" width="104" height="144" rx="17" fill="url(#lilac)"/><ellipse cx="150" cy="105" rx="51" ry="13" fill="#e7dcf2"/>
+      <path d="M111 118v115m16-114v116m16-113v114m16-114v114m16-116v115m16-119v113" stroke="#9985ae" stroke-opacity=".38" stroke-width="5" stroke-linecap="round"/><path d="M150 104V87" stroke="#51483e" stroke-width="3"/>
+    </symbol>
+    <symbol id="art-orbite" viewBox="0 0 300 300">
+      <ellipse cx="150" cy="252" rx="77" ry="12" fill="#514837" opacity=".12"/><path d="M130 74h40v29c0 16 49 38 49 83 0 37-28 63-69 63s-69-26-69-63c0-45 49-67 49-83Z" fill="url(#jade)"/><ellipse cx="150" cy="74" rx="20" ry="6" fill="#4e786c"/><ellipse cx="150" cy="73" rx="14" ry="3" fill="#34584e"/><path d="M119 143c-17 18-20 43-12 62" fill="none" stroke="#d9e9d7" stroke-width="5" opacity=".45" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="art-galet" viewBox="0 0 300 300">
+      <ellipse cx="150" cy="239" rx="106" ry="13" fill="#514837" opacity=".12"/><path d="M43 191q0-52 107-52t107 52v22q0 35-107 35T43 213Z" fill="url(#peach)"/><ellipse cx="150" cy="191" rx="107" ry="49" fill="#f2c9b0"/><ellipse cx="150" cy="190" rx="88" ry="35" fill="#dca58e"/><ellipse cx="150" cy="192" rx="79" ry="28" fill="#eab9a0"/>
+    </symbol>
+    <symbol id="art-nuage" viewBox="0 0 300 300">
+      <ellipse cx="150" cy="254" rx="87" ry="11" fill="#514837" opacity=".12"/><path d="M88 246c-35-35-33-82-7-99 3-31 25-47 48-40 19-32 52-23 61 1 33-2 51 28 40 54 29 31 8 71-14 84Z" fill="url(#wax)"/><path d="M143 107V88" stroke="#51483e" stroke-width="3"/><path d="M143 88c-14-13-4-22 0-32 9 12 12 25 0 32" fill="#edb878"/><path d="M99 162c-9 22-3 45 4 53m61-93c-12 36-8 79 4 108" fill="none" stroke="#c7b89f" stroke-width="3" opacity=".4"/>
+    </symbol>
+    <symbol id="art-anse" viewBox="0 0 300 300">
+      <ellipse cx="151" cy="255" rx="79" ry="11" fill="#514837" opacity=".12"/><path d="M184 138c67-38 83 73 18 76" fill="none" stroke="#b5a3c7" stroke-width="19"/><path d="M106 77h78v46c0 24 25 53 25 82 0 32-20 46-53 46h-12c-33 0-53-14-53-46 0-29 15-57 15-82Z" fill="url(#lilac)"/><ellipse cx="145" cy="77" rx="39" ry="10" fill="#a898b9"/><ellipse cx="145" cy="76" rx="28" ry="5" fill="#81738f"/><path d="M119 139c-8 24-13 45-10 66" fill="none" stroke="#eee4f6" stroke-width="4" opacity=".6" stroke-linecap="round"/>
+    </symbol>
+  </defs></svg>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-sticky shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span aria-hidden="true">✳</span> COLLECTION IMAGINAIRE / 01</p>
+          <h1 id="hero-title">Les petits riens.<br><em>Lo que hace<br>un hogar.</em></h1>
+          <p class="hero-description">Velas, formas suaves y pequeños objetos para habitar la calma. Un universo artesanal <strong>completamente ficticio</strong>, diseñado para inspirar.</p>
+          <a class="button primary" href="#catalogo">Explorar la colección <span aria-hidden="true">↗</span></a>
+          <p class="micro">Bruma Atelier es una marca de demostración.</p>
+        </div>
+        <div class="hero-art">
+          <!-- Capas independientes para las trayectorias a pantalla completa. -->
+          <div class="cinema-halo halo-jade" aria-hidden="true"></div>
+          <div class="cinema-halo halo-lilac" aria-hidden="true"></div>
+          <svg class="floating-piece flying-vase" viewBox="0 0 300 300" aria-hidden="true"><use href="#art-orbite"/></svg>
+          <svg class="floating-piece flying-pleat" viewBox="0 0 300 300" aria-hidden="true"><use href="#art-pli"/></svg>
+          <svg class="floating-piece flying-candle" viewBox="0 0 300 300" aria-hidden="true"><use href="#art-aube"/></svg>
+          <div class="glass-orbit orbit-one" aria-hidden="true"></div><div class="glass-orbit orbit-two" aria-hidden="true"></div>
+          <span class="scene-note note-top">Objetos para bajar el ritmo.</span>
+          <svg class="scene" viewBox="0 0 600 590" role="img" aria-labelledby="scene-title"><title id="scene-title">Composición ilustrada de una vela crema, un jarrón jade y una vela lavanda sobre un pedestal</title>
+            <ellipse cx="306" cy="494" rx="224" ry="33" fill="#8d887e" opacity=".1"/>
+            <path d="M76 409h448v76q-224 76-448 0Z" fill="#e4dcd0"/><ellipse cx="300" cy="409" rx="224" ry="53" fill="#fff6e7"/>
+            <g class="scene-vase"><use href="#art-orbite" x="213" y="53" width="330" height="370"/></g>
+            <g class="scene-pleat"><use href="#art-pli" x="-5" y="151" width="310" height="310"/></g>
+            <g class="scene-candle"><use href="#art-aube" x="169" y="227" width="283" height="283"/></g>
+            <path d="M470 157v26m-13-13h26" stroke="#6a8270" stroke-width="1.5"/><circle cx="79" cy="304" r="4" fill="#8f7c9e"/>
+          </svg>
+          <div class="scene-label"><span class="tiny-dot" aria-hidden="true"></span> Formes douces <span>/ 001</span></div>
+          <span class="scene-note note-bottom">Un peu de brume, beaucoup de douceur.</span>
+        </div>
+        <div class="cinema-chapter chapter-one" aria-hidden="true"><span>01 / LA MATERIA EN MOVIMIENTO</span><p>Deja que las formas<br><em>encuentren su espacio.</em></p></div>
+        <div class="cinema-chapter chapter-two" aria-hidden="true"><span>02 / UNA PEQUEÑA CONSTELACIÓN</span><p>Una luz.<br><em>Mil rincones.</em></p></div>
+        <div class="cinema-meter" aria-hidden="true"><span class="cinema-step">01 / 03</span><div><span></span></div></div>
+        <div class="hero-bottom"><span>UN ATELIER QUI N’EXISTE QUE POUR CETTE DÉMO</span><a href="#catalogo">Desliza y descubre <span aria-hidden="true">↓</span></a></div>
+      </div>
+    </section>
+    <section class="collection shell" id="catalogo" aria-labelledby="catalog-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / LA COLECCIÓN</p><h2 id="catalog-title">Pequeñas piezas.<br><em>Mucho espacio para sentir.</em></h2></div><p>Un catálogo de ejemplo para explorar.<br>Ilustraciones propias, precios imaginados<br>y ninguna compra real.</p></div>
+      <div class="catalog-tools"><div class="filters" role="group" aria-label="Filtrar por categoría"><button data-filter="todos" aria-pressed="true" disabled>Todo <span>06</span></button><button data-filter="velas" aria-pressed="false" disabled>Velas <span>03</span></button><button data-filter="objetos" aria-pressed="false" disabled>Objetos <span>03</span></button></div><p id="filter-status" role="status">6 piezas imaginadas</p></div>
+      <noscript><p class="no-js">Todos los productos están visibles. El detalle interactivo, los filtros y la bolsa de demostración requieren JavaScript. No se realizan compras.</p></noscript>
+      <div class="product-grid">
+        <article class="product-card" data-id="aube" data-category="velas" data-price="24" data-description="Una vela imaginada en un recipiente crema, con una etiqueta mínima. Concepto de acabado liso y luz cálida; no representa un artículo a la venta.">
+          <div class="product-art cream"><span class="piece-number">01 / VELA</span><svg viewBox="0 0 300 300" role="img" aria-label="Ilustración de vela Aube en recipiente crema"><use href="#art-aube"/></svg><button class="detail-link" data-detail disabled aria-label="Ver detalle de Aube">Ver pieza <span aria-hidden="true">↗</span></button></div>
+          <div class="product-meta"><div><h3>Aube</h3><p>Vela en recipiente · concepto</p></div><span class="price">24,00 €<small>precio ficticio</small></span></div><button class="add-button" data-add disabled aria-label="Añadir Aube a la bolsa demo">Añadir a la bolsa demo <span aria-hidden="true">+</span></button>
+        </article>
+        <article class="product-card" data-id="pli" data-category="velas" data-price="18" data-description="Una vela escultórica ficticia, de silueta acanalada y color lavanda. Sus formas y su precio son una propuesta visual para esta demostración.">
+          <div class="product-art lavender"><span class="piece-number">02 / VELA</span><svg viewBox="0 0 300 300" role="img" aria-label="Ilustración de vela Pli acanalada lavanda"><use href="#art-pli"/></svg><button class="detail-link" data-detail disabled aria-label="Ver detalle de Pli">Ver pieza <span aria-hidden="true">↗</span></button></div>
+          <div class="product-meta"><div><h3>Pli</h3><p>Vela acanalada · concepto</p></div><span class="price">18,00 €<small>precio ficticio</small></span></div><button class="add-button" data-add disabled aria-label="Añadir Pli a la bolsa demo">Añadir a la bolsa demo <span aria-hidden="true">+</span></button>
+        </article>
+        <article class="product-card" data-id="orbite" data-category="objetos" data-price="36" data-description="Un jarrón de cerámica imaginado, redondo y de tono jade. Una exploración de volumen y color, sin existencias ni fabricación reales.">
+          <div class="product-art sage"><span class="piece-number">03 / OBJETO</span><svg viewBox="0 0 300 300" role="img" aria-label="Ilustración del jarrón redondo Orbite en jade"><use href="#art-orbite"/></svg><button class="detail-link" data-detail disabled aria-label="Ver detalle de Orbite">Ver pieza <span aria-hidden="true">↗</span></button></div>
+          <div class="product-meta"><div><h3>Orbite</h3><p>Jarrón de cerámica · concepto</p></div><span class="price">36,00 €<small>precio ficticio</small></span></div><button class="add-button" data-add disabled aria-label="Añadir Orbite a la bolsa demo">Añadir a la bolsa demo <span aria-hidden="true">+</span></button>
+        </article>
+        <article class="product-card" data-id="galet" data-category="objetos" data-price="22" data-description="Una bandeja decorativa de cerámica ficticia, inspirada en un canto rodado. El acabado melocotón y el precio son ejemplos de diseño; no es un producto real.">
+          <div class="product-art peach"><span class="piece-number">04 / OBJETO</span><svg viewBox="0 0 300 300" role="img" aria-label="Ilustración de bandeja Galet color melocotón"><use href="#art-galet"/></svg><button class="detail-link" data-detail disabled aria-label="Ver detalle de Galet">Ver pieza <span aria-hidden="true">↗</span></button></div>
+          <div class="product-meta"><div><h3>Galet</h3><p>Bandeja decorativa · concepto</p></div><span class="price">22,00 €<small>precio ficticio</small></span></div><button class="add-button" data-add disabled aria-label="Añadir Galet a la bolsa demo">Añadir a la bolsa demo <span aria-hidden="true">+</span></button>
+        </article>
+        <article class="product-card" data-id="nuage" data-category="velas" data-price="20" data-description="Una vela hecha a mano en el relato de este atelier ficticio. Su forma de nube es una ilustración conceptual; no existen artículos, aromas ni prestaciones reales.">
+          <div class="product-art sand"><span class="piece-number">05 / VELA</span><svg viewBox="0 0 300 300" role="img" aria-label="Ilustración de vela Nuage con forma de nube"><use href="#art-nuage"/></svg><button class="detail-link" data-detail disabled aria-label="Ver detalle de Nuage">Ver pieza <span aria-hidden="true">↗</span></button></div>
+          <div class="product-meta"><div><h3>Nuage</h3><p>Vela escultórica · concepto</p></div><span class="price">20,00 €<small>precio ficticio</small></span></div><button class="add-button" data-add disabled aria-label="Añadir Nuage a la bolsa demo">Añadir a la bolsa demo <span aria-hidden="true">+</span></button>
+        </article>
+        <article class="product-card" data-id="anse" data-category="objetos" data-price="42" data-description="Una pieza decorativa de cerámica imaginada, con asa orgánica y color lavanda. No hay taller, inventario ni venta detrás de este objeto de ejemplo.">
+          <div class="product-art rose"><span class="piece-number">06 / OBJETO</span><svg viewBox="0 0 300 300" role="img" aria-label="Ilustración del jarrón Anse con asa lavanda"><use href="#art-anse"/></svg><button class="detail-link" data-detail disabled aria-label="Ver detalle de Anse">Ver pieza <span aria-hidden="true">↗</span></button></div>
+          <div class="product-meta"><div><h3>Anse</h3><p>Jarrón con asa · concepto</p></div><span class="price">42,00 €<small>precio ficticio</small></span></div><button class="add-button" data-add disabled aria-label="Añadir Anse a la bolsa demo">Añadir a la bolsa demo <span aria-hidden="true">+</span></button>
+        </article>
+      </div>
+      <p class="catalog-disclaimer">Precios de ejemplo en EUR. Sin stock, envíos, pedidos ni pagos reales.</p>
+    </section>
+    <section class="process shell" id="proceso" aria-labelledby="process-title">
+      <div class="process-intro"><p class="eyebrow">02 / EL ATELIER IMAGINADO</p><h2 id="process-title">Menos prisa.<br><em>Más intención.</em></h2><p>Si Bruma existiera, el proceso empezaría con una pausa. Este es el relato creativo de una marca ficticia, no la descripción de un taller real.</p><span class="process-seal" aria-hidden="true">b.<span>une idée douce</span></span></div>
+      <div class="process-steps"><article><span>01</span><div><h3>Imaginar la forma</h3><p>Una curva, una sombra, un color. Pequeñas ideas que se convierten en bocetos.</p></div></article><article><span>02</span><div><h3>Dar espacio a la materia</h3><p>Cera y cerámica como inspiración visual. Texturas ilustradas, sin promesas de fabricación.</p></div></article><article><span>03</span><div><h3>Encontrar su rincón</h3><p>Un objeto imaginado para una mesa, una estantería o ese lugar que pide un poco de calma.</p></div></article></div>
+    </section>
+    <section class="faq shell" id="preguntas" aria-labelledby="faq-title"><div><p class="eyebrow">03 / SIN LETRA PEQUEÑA</p><h2 id="faq-title">Antes de<br><em>imaginar tu bolsa.</em></h2></div><div class="faq-items"><details open><summary>¿Puedo comprar estas piezas?</summary><p>No. Bruma Atelier, sus productos y sus precios son ficticios. Esta página es una demostración de diseño web de WebCharra.</p></details><details><summary>¿Qué hace la bolsa de demostración?</summary><p>Permite añadir piezas, cambiar cantidades y ver un total ficticio. Al finalizar solo aparece un mensaje: no se envían pedidos ni se cobran importes.</p></details><details><summary>¿Se guardan mis datos?</summary><p>La bolsa vive únicamente en la memoria de esta página y se vacía al recargar. Esta demo no usa cookies, almacenamiento local ni un servidor para el carrito. No solicita datos personales ni bancarios.</p></details><details><summary>¿Quién ha creado esta demo?</summary><p>WebCharra. Puedes <a href="../../">volver a la web principal</a> para conocer sus servicios de diseño web.</p></details></div></section>
+    <section class="closing shell"><span aria-hidden="true">✳</span><p>Una tienda imaginaria.<br><em>Las posibilidades, muy reales.</em></p><a class="button" href="../../">Conoce WebCharra <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="footer shell"><div><a class="footer-brand" href="#inicio">bruma atelier.</a><p>Universo ficticio · Demo de diseño por <a href="../../">WebCharra</a>.</p></div><nav class="legal-links" aria-label="Enlaces legales de WebCharra"><a href="../../aviso-legal/">Aviso legal</a><a href="../../politica-privacidad/">Privacidad</a><a href="../../politica-cookies/">Cookies</a></nav><p class="footer-note">Sin compras reales. Sin datos de pago. Solo inspiración.</p></footer>
+  <div class="toast" id="cart-status" role="status" aria-atomic="true"></div>
+  <dialog class="detail-dialog" id="product-dialog" aria-labelledby="detail-title"><button class="close-button" data-close aria-label="Cerrar detalle" autofocus>✕</button><div class="detail-art" id="detail-art"></div><div class="detail-copy"><p class="eyebrow">PIEZA IMAGINADA / DEMO</p><h2 id="detail-title"></h2><p id="detail-description"></p><p class="detail-price" id="detail-price"></p><p class="micro">Producto y precio ficticios. No está a la venta.</p><button class="button primary" id="detail-add">Añadir a la bolsa demo <span aria-hidden="true">+</span></button></div></dialog>
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title" aria-describedby="cart-warning"><div class="cart-heading"><div><p class="eyebrow">SOLO PARA EXPLORAR</p><h2 id="cart-title">Tu bolsa <em>imaginada.</em></h2></div><button class="close-button" data-close aria-label="Cerrar bolsa" autofocus>✕</button></div><p class="cart-warning" id="cart-warning">Demo: piezas y precios ficticios. No se tramitan pedidos ni pagos.</p><p id="cart-empty">Tu bolsa está en calma. Añade alguna pieza del catálogo para probar la demo.</p><ul class="cart-items" id="cart-items"></ul><div class="cart-summary"><div><span>Total de ejemplo</span><strong id="cart-total" aria-live="polite" aria-atomic="true">0,00 €</strong></div><p>Importe ficticio en EUR. Sin gastos ni cobros reales.</p><button class="button primary" id="cart-finish" disabled>Finalizar demo <span aria-hidden="true">↗</span></button><p class="finish-message" id="finish-message" role="status" hidden>Demo finalizada. No se ha realizado ningún pedido, transmitido datos ni cobrado dinero. Tu bolsa sigue siendo solo una simulación.</p></div></dialog>
+</body>
+</html>
