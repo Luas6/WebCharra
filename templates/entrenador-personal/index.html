@@ -91,19 +91,40 @@
             </div>
             <p class="hero-note">A tu nivel. A tu manera. Paso a paso.</p>
         </div>
-        <div class="hero-art" aria-hidden="true">
-            <div class="art-canvas">
+        <div class="hero-art">
+            <div class="art-canvas" aria-hidden="true">
                 <span class="art-label">THE EVERYDAY MOVEMENT CLUB</span>
-                <svg class="movement-drawing" viewBox="0 0 480 510" fill="none">
+                <svg class="movement-drawing" viewBox="0 0 480 510" fill="none" focusable="false">
                     <circle cx="245" cy="232" r="160" class="art-disc"/>
                     <path d="M42 385C92 293 389 293 438 385C488 477 1 477 42 385Z" class="art-orbit"/>
-                    <path d="M242 136C263 123 286 136 282 157C279 174 256 185 243 172C230 159 229 146 242 136Z" class="figure-line"/>
-                    <path d="M252 185C228 204 210 229 199 260L243 287L284 247L273 204M238 200L183 183L149 137M183 183L195 137M272 206L327 181L355 141M327 181L316 141M243 287L215 335L165 378M284 247L293 310L334 363M165 378L134 385M334 363L362 373" class="figure-line"/>
+                    <ellipse cx="242" cy="440" rx="99" ry="12" fill="#283d36" opacity=".1"/>
+                    <!-- Figura esquemática: brazos y barra comparten tiempos y recorrido. -->
+                    <g class="lifter" stroke-linejoin="round" stroke-linecap="round">
+                        <circle cx="240" cy="171" r="23" class="lifter-head"/>
+                        <path d="M240 196V216M213 295L203 356L191 426H174M267 295L277 356L289 426H306" class="lifter-limb"/>
+                        <path d="M212 214Q240 207 268 214L261 295Q240 303 219 295Z" class="lifter-body"/>
+                        <path d="M212 218L175 263L164 218" class="lifter-limb">
+                            <animate attributeName="d" values="M212 218L175 263L164 218;M212 218L175 263L164 218;M212 218L188 157L164 96;M212 218L188 157L164 96;M212 218L175 263L164 218;M212 218L175 263L164 218" keyTimes="0;.12;.44;.6;.94;1" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1" dur="5s" repeatCount="indefinite" begin="indefinite"/>
+                        </path>
+                        <path d="M268 218L305 263L316 218" class="lifter-limb">
+                            <animate attributeName="d" values="M268 218L305 263L316 218;M268 218L305 263L316 218;M268 218L292 157L316 96;M268 218L292 157L316 96;M268 218L305 263L316 218;M268 218L305 263L316 218" keyTimes="0;.12;.44;.6;.94;1" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1" dur="5s" repeatCount="indefinite" begin="indefinite"/>
+                        </path>
+                        <g class="lifter-bar">
+                            <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -122;0 -122;0 0;0 0" keyTimes="0;.12;.44;.6;.94;1" calcMode="spline" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1" dur="5s" repeatCount="indefinite" begin="indefinite"/>
+                            <path d="M87 218H393" class="bar-shaft"/>
+                            <rect x="111" y="184" width="20" height="68" rx="5" class="bar-plate"/>
+                            <rect x="96" y="194" width="12" height="48" rx="4" class="bar-plate bar-plate-small"/>
+                            <rect x="349" y="184" width="20" height="68" rx="5" class="bar-plate"/>
+                            <rect x="372" y="194" width="12" height="48" rx="4" class="bar-plate bar-plate-small"/>
+                            <path d="M164 214V222M316 214V222" class="lifter-grip"/>
+                        </g>
+                    </g>
                     <path d="M92 94L104 74M93 74L104 94M378 284L390 264M378 264L390 284" class="art-spark"/>
                 </svg>
                 <div class="art-caption"><span>01 / VUELVE A TI</span><span>respira &amp; muévete</span></div>
             </div>
-            <div class="art-pill"><span aria-hidden="true">✳</span> Pequeños pasos.<br>Grandes sensaciones.</div>
+            <div class="art-pill" aria-hidden="true"><span>✳</span> Pequeños pasos.<br>Grandes sensaciones.</div>
+            <button class="movement-toggle" type="button" aria-pressed="false" hidden>Pausar movimiento</button>
         </div>
     </section>
     <div class="movement-strip container" aria-label="Nuestra filosofía"><span>Fuerza sin prisas</span><span aria-hidden="true">✳</span><span>Hábitos que acompañan</span><span aria-hidden="true">✳</span><span>Movimiento consciente</span></div>

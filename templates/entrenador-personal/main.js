@@ -36,6 +36,43 @@
   setMotion();
   motion.addEventListener('change', setMotion);
 
+  // Ilustración articulada: pausa manual, fuera de pantalla y en pestañas ocultas.
+  const art = document.querySelector('.hero-art');
+  const drawing = art.querySelector('.movement-drawing');
+  const movementToggle = art.querySelector('.movement-toggle');
+  let movementPaused = false;
+  let artVisible = true;
+  let animationStarted = false;
+  function updateMovement() {
+    const running = !movementPaused && artVisible && !document.hidden && !motion.matches;
+    if (running) {
+      if (!animationStarted) {
+        drawing.querySelectorAll('animate, animateTransform').forEach(animation => animation.beginElement());
+        animationStarted = true;
+      }
+      drawing.unpauseAnimations();
+    } else {
+      drawing.pauseAnimations();
+    }
+    movementToggle.hidden = motion.matches;
+    movementToggle.setAttribute('aria-pressed', String(movementPaused));
+    movementToggle.textContent = movementPaused ? 'Reanudar movimiento' : 'Pausar movimiento';
+  }
+  movementToggle.addEventListener('click', () => {
+    movementPaused = !movementPaused;
+    updateMovement();
+  });
+  motion.addEventListener('change', updateMovement);
+  document.addEventListener('visibilitychange', updateMovement);
+  if ('IntersectionObserver' in window) {
+    const artObserver = new IntersectionObserver(([entry]) => {
+      artVisible = entry.isIntersecting;
+      updateMovement();
+    });
+    artObserver.observe(art);
+  }
+  updateMovement();
+
   // Las anclas navegan de verdad; solo los formularios se simulan.
   document.querySelectorAll('form').forEach(form => {
     const feedback = document.createElement('p');
