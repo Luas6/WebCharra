@@ -47,15 +47,26 @@ spotlight.addEventListener('focus', lightSpotlight);
 
 const filters = [...document.querySelectorAll('[data-filter]')];
 const experiments = [...document.querySelectorAll('.experiment')];
-filters.forEach(button => button.addEventListener('click', () => {
-  filters.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+const collectionSections = [...document.querySelectorAll('[data-collection]')];
+function filterExperiments(filter) {
+  filters.forEach(item => item.setAttribute('aria-pressed', String(item.dataset.filter === filter)));
   let count = 0;
   experiments.forEach(card => {
-    card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter;
+    card.hidden = filter !== 'all' && card.dataset.category !== filter;
     if (!card.hidden) count++;
   });
+  collectionSections.forEach(section => {
+    section.hidden = ![...section.querySelectorAll('.experiment')].some(card => !card.hidden);
+  });
   document.querySelector('#result-count').textContent = `${count} experimentos`;
-}));
+}
+filters.forEach(button => button.addEventListener('click', () => filterExperiments(button.dataset.filter)));
+document.querySelector('[data-filter="all"] span').textContent = String(experiments.length).padStart(2, '0');
+filterExperiments('all');
+// Las anclas del índice siempre abren su colección, aunque un filtro la ocultara.
+document.querySelectorAll('.collection-index a').forEach(link => {
+  link.addEventListener('click', () => filterExperiments('all'));
+});
 
 // Tabs con foco itinerante y teclas de dirección, Inicio y Fin.
 const tabs = [...document.querySelectorAll('[role="tab"]')];
@@ -147,6 +158,7 @@ save.addEventListener('click', () => {
 });
 
 const references = {
+  ...window.labCollectionReferences,
   spotlight: {
     title: 'Spotlight & profundidad', description: 'Gradiente radial controlado por variables CSS y una inclinación limitada. La tarjeta conserva su contenido sin movimiento.',
     use: 'Destacar un proyecto, una membresía o una tarjeta de producto. No lo uses en grandes bloques de lectura.',

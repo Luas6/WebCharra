@@ -47,7 +47,7 @@ p{color:var(--muted)}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 .hero-note{font-size:.77rem;margin:24px 0 0}
 .hero-art{position:relative;padding:0 0 28px 12px;perspective:1000px}
-.art-canvas{position:relative;background:var(--sage);border-radius:220px 220px 28px 28px;padding:56px 22px 20px;transform:rotate(2deg);transition:transform .7s var(--ease);overflow:hidden}
+.art-canvas{position:relative;background:var(--sage);border-radius:220px 220px 28px 28px;padding:56px 22px 25px;transform:rotate(2deg);transition:transform .7s var(--ease);overflow:hidden}
 .art-label{display:block;text-align:center;font-size:.6rem;letter-spacing:.22em;position:relative;z-index:1}
 .movement-drawing{width:100%;margin-top:-12px}
 .art-disc{fill:#f5efdc}
