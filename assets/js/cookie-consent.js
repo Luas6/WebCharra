@@ -81,7 +81,6 @@
     const persisted = saveChoice(value);
     banner.hidden = true;
     settings.hidden = false;
-    settings.focus();
     if (value === 'accepted') {
       if (location.href) {
         const url = new URL(location.href);
@@ -137,7 +136,12 @@
     choice = readChoice();
     banner.hidden = choice !== null;
     settings.hidden = choice === null;
-    document.body.append(banner, settings);
+    document.body.append(banner);
+    // Mantén el acceso a preferencias en el pie, sin un control flotante permanente.
+    const settingsHost = document.querySelector('footer .legal-links, footer .footer-links, footer') || document.body;
+    settings.className = 'wc-cookie-settings-link';
+    settings.textContent = 'Preferencias de cookies';
+    settingsHost.append(settings);
     if (choice === 'accepted') loadTracking();
     else if (choice === 'rejected') clearAnalyticsCookies();
   }

@@ -8,6 +8,7 @@ function page(saved, blocked = false, href = 'http://localhost:8080/', scriptSrc
   const nodes = [];
   const requests = [];
   const styles = [];
+  const footerItems = [];
   let ready;
   let reloads = 0;
   let redirected;
@@ -35,6 +36,7 @@ function page(saved, blocked = false, href = 'http://localhost:8080/', scriptSrc
       if (node.tag === 'link') styles.push(node.href);
     }},
     body: null,
+    querySelector() { return {append(node) { footerItems.push(node); }}; },
     createElement: element,
     addEventListener(type, fn) { if (type === 'DOMContentLoaded') ready = fn; }
   };
@@ -51,7 +53,7 @@ function page(saved, blocked = false, href = 'http://localhost:8080/', scriptSrc
   document.body = {append(...elements) { nodes.push(...elements); }};
   ready();
   return {
-    banner: nodes[0], settings: nodes[1], requests, styles, store, window: context.window,
+    banner: nodes[0], settings: footerItems[0], requests, styles, store, window: context.window,
     get reloads() { return reloads; },
     get redirected() { return redirected; },
     choose(value) { nodes[0].buttons.find(b => b.dataset.choice === value).listeners.click(); }
@@ -64,6 +66,8 @@ assert.equal(fresh.requests.length, 0);
 assert.equal(fresh.window.clarity, undefined);
 fresh.choose('accepted');
 assert.equal(fresh.banner.hidden, true);
+assert.equal(fresh.settings.textContent, 'Preferencias de cookies');
+assert.equal(fresh.settings.className, 'wc-cookie-settings-link');
 assert.equal(fresh.requests.length, 2);
 assert.match(fresh.requests[0], /GTM-W9F727R7/);
 assert.match(fresh.requests[1], /ywr07kcar3/);
