@@ -213,6 +213,99 @@
     find('#loading-status').textContent = loaded ? 'Contenido de demostración disponible.' : 'Estado inicial: cargando.';
   });
 
+  const places = {
+    one: ['Plaza del Olmo', 'Punto de encuentro · Zona centro'],
+    two: ['Patio de la Luz', 'Galería · Barrio imaginario'],
+    three: ['Jardín del Río', 'Parque · Orilla ficticia']
+  };
+  document.querySelectorAll('[data-place]').forEach(button => button.addEventListener('click', () => {
+    document.querySelectorAll('[data-place]').forEach(item => {
+      item.setAttribute('aria-pressed', String(item === button));
+    });
+    const place = places[button.dataset.place];
+    find('#atlas-place-name').textContent = place[0];
+    find('#atlas-place-kind').textContent = place[1];
+  }));
+
+  const routeMinutes = {
+    plaza: {patio: 8, jardin: 12},
+    patio: {plaza: 8, jardin: 6},
+    jardin: {plaza: 12, patio: 6}
+  };
+  let routeMode = 'walk';
+  function updateRoute() {
+    const from = find('#route-from').value;
+    const to = find('#route-to').value;
+    if (from === to) {
+      find('#route-summary').textContent = 'Elige dos puntos distintos para ver el recorrido.';
+      return;
+    }
+    const minutes = routeMinutes[from][to] + (routeMode === 'wheel' ? 4 : 0);
+    find('#route-summary').textContent = `Ruta conceptual · ${minutes} min ${routeMode === 'wheel' ? 'accesible' : 'andando'}`;
+  }
+  find('#route-from').addEventListener('change', updateRoute);
+  find('#route-to').addEventListener('change', updateRoute);
+  document.querySelectorAll('[data-route-mode]').forEach(button => button.addEventListener('click', () => {
+    routeMode = button.dataset.routeMode;
+    document.querySelectorAll('[data-route-mode]').forEach(item => {
+      item.setAttribute('aria-pressed', String(item === button));
+    });
+    find('.route-demo').dataset.mode = routeMode;
+    updateRoute();
+  }));
+
+  const locatorQuery = find('#place-query');
+  let locatorKind = 'all';
+  function filterPlaces() {
+    const query = locatorQuery.value.trim().toLocaleLowerCase('es');
+    let count = 0;
+    document.querySelectorAll('#locator-results li').forEach(item => {
+      item.hidden = (locatorKind !== 'all' && item.dataset.kind !== locatorKind) ||
+        (query !== '' && !item.dataset.name.includes(query));
+      if (!item.hidden) count++;
+    });
+    find('#locator-status').textContent = `${count} ${count === 1 ? 'lugar ficticio' : 'lugares ficticios'} · No se usa tu ubicación.`;
+  }
+  locatorQuery.addEventListener('input', filterPlaces);
+  document.querySelectorAll('[data-place-filter]').forEach(button => button.addEventListener('click', () => {
+    locatorKind = button.dataset.placeFilter;
+    document.querySelectorAll('[data-place-filter]').forEach(item => {
+      item.setAttribute('aria-pressed', String(item === button));
+    });
+    filterPlaces();
+  }));
+
+  find('#copy-address').addEventListener('click', async () => {
+    const address = 'Plaza del Olmo, 4 · Salamanca';
+    try {
+      await navigator.clipboard.writeText(address);
+      find('#address-status').textContent = 'Dirección de ejemplo copiada.';
+    } catch {
+      find('#address-status').textContent = address + ' · Copia manualmente; portapapeles no disponible.';
+    }
+  });
+
+  find('#service-radius').addEventListener('input', event => {
+    const km = Number(event.target.value);
+    find('.radius-map').style.setProperty('--radius-size', `${35 + km * 2.1}%`);
+    find('#radius-value').textContent = `${km} km`;
+    find('#radius-description').textContent = km < 6 ? 'Cobertura local y cercana.' : km < 14 ? 'Cobertura para varias zonas.' : 'Cobertura amplia de ejemplo.';
+  });
+
+  const clusters = {
+    one: ['Zona norte', 12],
+    two: ['Zona centro', 8],
+    three: ['Zona sur', 5]
+  };
+  document.querySelectorAll('[data-cluster]').forEach(button => button.addEventListener('click', () => {
+    document.querySelectorAll('[data-cluster]').forEach(item => {
+      item.setAttribute('aria-pressed', String(item === button));
+    });
+    const cluster = clusters[button.dataset.cluster];
+    find('#cluster-name').textContent = cluster[0];
+    find('#cluster-count').textContent = `${cluster[1]} puntos de interés`;
+  }));
+
 })();
 
 // Fichas consumidas por el diálogo común de lab.js; fragmentos, no componentes completos.
@@ -342,5 +435,47 @@ window.labCollectionReferences = {
     use: 'Reservar espacio mientras llega contenido real. Si la operación tarda, ofrecer estado y alternativa de error.',
     access: 'El shimmer es decorativo, se detiene con pausa/reduced motion y un texto de estado describe el cambio.',
     code: 'const loaded = card.classList.toggle("is-loaded");\nbutton.setAttribute("aria-pressed", String(loaded));\nstatus.textContent = loaded\n  ? "Contenido disponible" : "Cargando";'
+  },
+  atlas: {
+    title: 'Mapa ilustrado con puntos de interés',
+    description: 'Un callejero SVG esquemático con marcadores seleccionables y una ficha textual sincronizada.',
+    use: 'Portadas de sitios, ubicaciones conceptuales y mapas donde importa mostrar relaciones espaciales sin teselas ni SDK externo.',
+    access: 'Los marcadores son botones con nombres y estado aria-pressed. El resumen repite el lugar seleccionado en texto.',
+    code: 'pins.forEach(pin => pin.addEventListener("click", () => {\n  pins.forEach(item => item.setAttribute(\n    "aria-pressed", String(item === pin)\n  ));\n  summary.textContent = places[pin.dataset.place];\n}));'
+  },
+  route: {
+    title: 'Planificador conceptual de rutas',
+    description: 'Selecciona dos ubicaciones y un modo de recorrido. La estimación se obtiene de datos ficticios locales.',
+    use: 'Comparadores de recorrido y planificación inicial. Para navegación real se requiere un proveedor y cálculo actualizado.',
+    access: 'Selects y botones funcionan con teclado; se impide presentar un trayecto hacia el mismo punto como ruta válida.',
+    code: 'const minutes = routes[from][to] +\n  (mode === "wheel" ? 4 : 0);\nstatus.textContent = `${minutes} min`;\n// En una app real, calcula y valida la ruta en el servicio.'
+  },
+  locator: {
+    title: 'Buscador de lugares cercano',
+    description: 'Un directorio de tres negocios ficticios que combina búsqueda textual y filtros por categoría.',
+    use: 'Directorios con un conjunto pequeño de lugares propios. Esta demo no pide permiso de ubicación ni usa GPS.',
+    access: 'Input type=search, filtros marcados con aria-pressed y número de resultados anunciado.',
+    code: 'items.forEach(item => {\n  item.hidden = (kind !== "all" && item.dataset.kind !== kind) ||\n    !item.dataset.name.includes(query);\n});\nstatus.textContent = `${visible} lugares`;'
+  },
+  venue: {
+    title: 'Ficha de negocio con contexto',
+    description: 'Una tarjeta junta nombre, tipo, horario, dirección ilustrativa y un mapa de barrio abstracto.',
+    use: 'Información de contacto y ubicación. Sustituir todos los datos de muestra por dirección y horarios verificados.',
+    access: 'El mapa es decorativo y se excluye del árbol accesible; dirección y controles permanecen como texto y botones normales.',
+    code: 'button.addEventListener("click", async () => {\n  try {\n    await navigator.clipboard.writeText(address);\n    status.textContent = "Dirección copiada";\n  } catch {\n    status.textContent = address;\n  }\n});'
+  },
+  radius: {
+    title: 'Radio de cobertura',
+    description: 'Un deslizador transforma el área esquemática y actualiza los kilómetros y una descripción de alcance.',
+    use: 'Presentar de manera aproximada dónde trabaja un negocio. No representa un análisis geográfico ni una posición real.',
+    access: 'Range nativo, medida visible y explicación en texto. El área dibujada es ilustrativa, no una escala cartográfica.',
+    code: 'range.addEventListener("input", () => {\n  output.textContent = `${range.value} km`;\n  circle.style.setProperty("--radius-size", `${range.value}%`);\n});'
+  },
+  cluster: {
+    title: 'Agrupación de marcadores',
+    description: 'Tres burbujas muestran cómo resumir conjuntos densos y permiten consultar el recuento por zona.',
+    use: 'Mapas de densidad o resultados geográficos numerosos. No sustituye el acceso a cada punto individual.',
+    access: 'Cada grupo es un botón con zona y recuento en su nombre; el grupo activo se indica también con aria-pressed y resumen textual.',
+    code: 'clusters.forEach(button => button.addEventListener("click", () => {\n  button.setAttribute("aria-pressed", "true");\n  count.textContent = `${cluster.count} puntos`;\n}));'
   }
 };
