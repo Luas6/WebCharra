@@ -145,6 +145,12 @@
   .service-card:hover,.button:hover,.work-card .work-image img{transform:none!important}
 }
 
+/* En pantallas pequeñas, conservar visible la navegación en lugar de ocultarla. */
+@media(max-width:760px){
+  .home-page .nav-links,.legal-page .nav-links{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:4px 16px;padding-block:8px 12px;font-size:.8rem}
+  .home-page .nav-links{grid-column:1/-1;grid-row:2}
+}
+
 /* Bootstrap resuelve posición y disposición; aquí, marca y estado del scroll. */
 .home-page{--header-height:77px}
 .home-page .skip{position:fixed}
